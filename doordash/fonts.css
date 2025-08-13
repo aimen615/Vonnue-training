@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'bold';
+    src: url(./Fonts/TTNorms-Bold.woff2);
+}
+@font-face {
+    font-family: 'font-1';
+    src: url(./Fonts/TTNorms-ExtraBold.woff2);
+}
+@font-face {
+    font-family: 'font-2';
+    src: url(./Fonts/TTNorms-Medium.woff2);
+}
+@font-face {
+    font-family: 'font-3';
+    src: url(./Fonts/TTNorms-Regular.woff2);
+}

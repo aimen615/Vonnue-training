@@ -1,0 +1,2589 @@
+*{
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    margin-top: 16px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.main-logo{
+   
+    border: 1px solid rgb(241, 241, 241);
+    border-radius: 12px;
+    margin: 0px;
+    width: 64px;
+    height: 64px;
+    fill: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-rating{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    margin-left: 8px;
+}
+.main-open button {
+font-family: 'bold';
+  background: #EB1700;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 18px;
+  cursor: pointer;
+  width: 66.2px;
+  height: 32px;
+  font-size: 16px;
+}
+.main-open{
+    display: flex;
+}
+.header-main{
+    display: block;
+    /* width: 262.8px; */
+    /* height: 22px; */
+    font-family: 'bold';
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    white-space: nowrap;
+    line-height: 22px;
+    font-size: 16px;
+    font-weight: 500;
+   letter-spacing: -0.01px;
+    color:#191919ff;
+}
+.header-main-2{
+    font-weight: 500;
+    display: block;
+    margin: 0;
+    padding: 0;
+    letter-spacing: -0.01px;
+    height: 20px;
+    line-height: 20px;
+    font-family: 'font-2';
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+}
+.main-background{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url("https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/hero_v3/hero_mobile.png");
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.open-app{
+    position: absolute;
+    top: 15px;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 24px;
+    cursor: pointer;
+}
+.open-app button{
+    display: flex;
+    min-height: 40px;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    background: #EB1700;
+    color: rgb(245, 245, 245);
+    border: none;
+    border-radius: 9999px;
+    font-weight: 900;
+    font-family: 'bold';
+    font-size: 16px;
+    letter-spacing: -0.01px;
+    padding: 0 12px;
+}
+.header-main-3{
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    -webkit-box-align: center;
+    letter-spacing: -0.01px;
+    line-height: 20px;
+}
+.header-main-4{
+    display: block;
+    margin-left: 6px ;
+    margin-bottom: 2px;
+    padding: 0;
+    max-width: 100%;
+    letter-spacing: -0.01px;
+    height: 20px;
+    font-family: 'font-2';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(96, 96, 96);
+}
+.star{
+    letter-spacing: -2px;
+    margin-left: 2px;
+}
+.main-doordash{
+    display: flex;
+    height: 18px;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.doordash-logo{
+    margin-top: 4px;
+}
+.doordash-text{
+    margin-left: -2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delivery{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.delivery-address{
+    display: flex;
+    align-items: center;
+    width: 287px;
+}
+.additional input{
+    font-family: 'font-2';
+    background: #ffff;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+}
+.delivery-address{
+    border-radius: 32px;
+    background: rgb(255, 255, 255);
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    padding: 6px 16px;
+    color: #191919ff;
+}
+.search-bar{
+    margin-right: 10px;
+    max-width: 100%;
+    width: 24px;
+    height: 24px;
+}
+.arrow-bar{
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.login-button{
+    display: flex;
+    border-radius: 9999px;
+    border: none;
+    width: 81.05px;
+    min-height: 32px;
+    margin-top: 16px;
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    /* gap: 6px; */
+    background-color: #fff;
+}
+.login-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 16px;
+    height: 16px; */
+
+}
+.login-text{
+    /* width: 37.05px; */
+    /* height: 20px; */
+    font-family: "bold";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    align-items: center;
+    margin-left: 4px;
+    padding: 0;
+    display: flex;
+    color: #191919ff;
+}
+.delivery h1{
+    font-family: "TTNormsProCond-Blk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    text-align: center;
+    line-height: 28px;
+    font-weight: 900;
+    margin: 0;
+    letter-spacing: -0.01px;
+    color: white;
+    display: block;
+    max-width: 350px;
+}
+.h1-text-div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+.additional{
+  margin-right: 10.5px;
+}
+
+.container-app{
+    margin: 0px 12.5px;
+    flex: 1 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+.container-app-2{
+    border-radius: 12px;
+    border: 1px solid #f1f1f1ff;
+    padding: 20px;
+    background-color: #f7f7f7ff;
+    display: block;
+    width: 360px;
+}
+.container-app-3{
+    display: flex;
+    text-align: left;
+}
+.doordash-logo-2{
+    border: 1px solid #f1f1f1ff;
+    background-color: #ffffffff;
+    border-radius: 12px;
+    padding: 8px;
+    margin-right: 8px;
+    padding-right: 10px;
+    display: flex;
+    height: fit-content;
+    min-height: 60px;
+}
+.door-dash-text-bold{
+    color: #191919ff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    font-family: 'bold';
+    display: block;
+    padding: 0;
+    margin: 0;
+
+}
+.door-dash-text-light{
+    margin-left: 4px;
+    margin-top: 2px;
+    font-family:"font-2";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: block;
+    color: rgb(96, 96, 96);
+}
+.main-rating-2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 2px;
+}
+.star-1{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.star-2{
+    margin-right: 2px;
+}
+.star-3{
+    margin-right: 2px;
+}
+.star-4{
+    margin-right: 2px;
+}
+.star-5{
+    margin-right: 2px;
+}
+.main-rating-text{
+    color: rgb(96, 96, 96);
+    font-family:"font-2";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    margin-left: 4px;
+}
+.container-app-2 button{
+    background-color: #EB1700ff;
+    border-radius: 9999px;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    color: #ffffffff;
+    margin-top: 16px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40px;
+    padding: 0;
+    width: 318px;
+}
+.continue-in-app{
+    font-family: 'bold';
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    width: 294px;
+}
+
+.main-container{
+    max-width: 418px; 
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub-container{
+    max-width: 418px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 8px;
+    max-width: 100%;
+    -webkit-box-pack: center;
+}
+.three-in-one{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+/* DASHER */
+
+
+.dasher{
+    display: flex;
+    width: 100%;
+    min-width: 360px;
+    flex-flow: row;
+    padding: 16px;
+    flex-grow: 1;
+}
+.dasher-img{
+    margin-right: 32px;
+}
+.scooty{
+    width: 88px;
+    height: 88px;
+}
+.dasher-text{
+    display: flex;
+    flex-flow: column;
+    max-width: 250px;
+}
+.dasher-text h2{
+    font-family: 'bold';
+    display: block;
+    margin: 0;
+    padding: 0;
+    color: #191919ff;
+    font-size: 32px;
+    font-weight: 7;
+    line-height: 40px;
+    letter-spacing: -0.01px; 
+}
+.dasher-text h3{
+    color: #191919ff;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'font-2';
+    font-weight: 500;
+    letter-spacing: -0.01px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.dasher-text button{
+    border: 0px;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    outline: 0px;
+    margin-top: 12px;
+    padding: 0;
+}
+.text-btn{
+    color: #EB1700ff;
+    font-family: 'bold';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+.dasher-logo{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 4px;
+}
+
+
+/* MERCHANT */
+
+
+.merchant{
+    display: flex;
+    width: 100%;
+    min-width: 360px;
+    flex-flow: row;
+    padding: 16px;
+}
+.merchant-img{
+    margin-right: 32px;
+}
+.shop{
+    width: 88px;
+    height: 88px;
+}
+.merchant-text{
+    display: flex;
+    flex-flow: column;
+    max-width: 250px;
+}
+.merchant-text h2{
+    font-family: 'bold';
+    display: block;
+    margin: 0;
+    padding: 0;
+    color: #191919ff;
+    font-size: 32px;
+    font-weight: 7;
+    line-height: 40px;
+    letter-spacing: -0.01px; 
+}
+.merchant-text h3{
+   color: #191919ff;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'font-2';
+    font-weight: 500;
+    letter-spacing: -0.01px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.merchant-text button{
+    border: 0px;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    outline: 0px;
+    margin-top: 12px;
+    padding: 0;
+}
+.text-btn-2{
+     color: #EB1700ff;
+    font-family: 'bold';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+.merchant-logo{
+     justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 4px;
+}
+
+
+/* PHONE  */
+
+
+.phone{
+     display: flex;
+    width: 100%;
+    min-width: 360px;
+    flex-flow: row;
+    padding: 16px;
+}
+.phone-img{
+    margin-right: 32px;
+}
+.mob{
+    width: 88px;
+    height: 88px;
+}
+.phone-text{
+    display: flex;
+    flex-flow: column;
+    max-width: 250px;
+}
+.phone-text h2{
+    font-family: 'bold';
+    display: block;
+    margin: 0;
+    padding: 0;
+    color: #191919ff;
+    font-size: 32px;
+    font-weight: 7;
+    line-height: 40px;
+    letter-spacing: -0.01px;
+}
+.phone-text h3{
+color: #191919ff;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'font-2';
+    font-weight: 500;
+    letter-spacing: -0.01px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.phone-text button{
+     border: 0px;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    outline: 0px;
+    margin-top: 12px;
+    padding: 0;
+}
+.text-btn-3{
+      color: #EB1700ff;
+    font-family: 'bold';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+.phone-logo{
+      justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 4px;
+}
+.mini-main{
+    width: 100%;
+}
+
+/* DOORDASH BUSINESS */
+
+
+.doordashbusiness{
+    width: 100%;
+}
+.restaurant{
+    display: flex;
+    padding: 20px;
+    margin-bottom: -300px;
+    min-width: 90%;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 16px;
+}
+.eating{
+    width: 100%;
+}
+.restaurant img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.restaurant-sub{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: -4px;
+}
+.restaurant-sub h2{
+    text-align: left;
+    max-width: 90%;
+    font-family: 'bold';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.01px;
+    display: block;
+    margin-top: 24px;
+    margin-bottom: 0px ;
+    padding: 0;
+}
+.local-restaurant{
+    text-align: left;
+    color: #191919ff;
+    font-family: 'bold';
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    font-weight: 500;
+    display: block;
+    margin-top: 10px;
+}
+.local-restaurant-2{
+    text-align: left;
+    margin-top: 10px;
+    color: #191919ff;
+    font-family: font-2;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: -0.01px;
+    display: block;
+    padding: 0;
+}
+.restaurant-btn span{
+    color: white;
+    font-family: 'bold';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    text-align: center;
+    display: block;
+    padding: 0 14px;
+    margin: 0 -8px;
+}
+.restaurant-btn{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+.restaurant-btn button{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 99999px;
+    background-color: #EB1700ff;
+    height: 32px;
+    max-width: fit-content;
+}
+.dashpassbusiness{
+    width: 100%;
+    display: block;
+}
+
+
+/* GET DASHPASS */
+
+
+.dashpass{
+    background: #FEF1EE;
+    padding-top: 324px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-width: 90%;
+}
+    .food{
+        width: 100%;
+    }
+.dashpass img{
+    height: 180px;
+    object-fit: cover;
+}
+.dashpass-sub h2{
+    font-family: 'bold';
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 0;
+    max-width: 90%;
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 28px;
+    display: block;
+    color: #191919ff;
+    letter-spacing: -0.01px;
+}
+.dashpass-sub span{
+    text-align: left;
+    margin-top: 10px;
+    color: #191919ff;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: -0.01px;
+    display: block;
+    font-family: 'font-2';
+}
+.dashpass-btn{
+   margin-top: 20px;
+   display: flex;
+   justify-content: flex-start;
+}
+.dashpass-btn button{
+    position: relative;
+    background-color: #EB1700ff;
+    max-width: fit-content;
+    margin: 0;
+    padding: 0 12px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: none;
+    border-radius: 9999px;
+    cursor: pointer;
+}
+.dashpass-btn span{
+    display: block;
+    color: white;
+     font-family: 'bold';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*SHOP GROCERIES */
+
+
+.groceries {
+    background: url("https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/grocery_desktop.png") 
+                center center / cover no-repeat;
+    width: 100%;
+    height: 350px; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.grocery-overlay{
+    background-color: rgba(30, 30, 30, 0.6);
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    top: 0;
+    left: 0;
+}
+.groceries-sub h2{
+    text-align: center;
+    width: 359px;
+    display: block;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-family: 'bold';
+    filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 2px 8px);
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 300;
+}
+.delivery-text-1{
+    color: white;
+    font-family: 'bold';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    display: block;
+    text-align: center;
+    filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 2px 8px);
+    text-align: center;
+    margin-top: 10px;
+    padding: 0;
+}
+.delivery-text-2{
+    color: white;
+    font-family: 'font-2';
+    filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 2px 8px);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    text-align: center;
+    display: block;
+    padding: 0;
+    width: 100%;
+    letter-spacing: -0.01px;
+}
+.groceries-sub{
+    text-align: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+}
+.grocery-btn{
+    margin-top: 20px;
+}
+.grocery-btn button{
+    width: auto;
+    position: relative;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    min-height: 32px;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 99999px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    background-color: #EB1700ff;
+    color: white;
+}
+.grocery-btn span{
+     font-family: 'bold', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: -0.01px;
+    display: block;
+    padding: 0px 12px;
+}
+
+
+/* STORES */
+
+
+.stores{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    min-width: 90%;
+    align-items: center;
+}
+.stores img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.shopping-sub{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.shopping-sub h2{
+    max-width: 90%;
+    text-align: left;
+    margin: 20px 0px 0px 0px;
+    color: #191919ff;
+    font-family: 'bold';
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 300;
+    letter-spacing: -0.01px;
+    display: block;
+
+    padding: 0;
+}
+.shopping-sub span{
+    font-family: 'font-2';
+    color: #191919ff;
+    text-align: left;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 450;
+    letter-spacing: -0.01px;
+    display: block;
+    padding: 0;
+}
+.shop-btn {
+    display: block;
+    margin-top: 20px;
+}
+
+.shop-btn button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    min-height: 32px;
+    width: auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 99999px; /* Fully rounded */
+    background-color: #EB1700; 
+    cursor: pointer;
+}
+
+.shop-btn span {
+    margin-top: 0;
+    display: block;
+    color: white;
+    font-family: 'bold';
+    font-size: 14px;
+    font-weight: 500; 
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    text-align: center;
+    padding: 0 12px; /* Horizontal padding for spacing */
+    max-width: 100%;
+}
+.shopping-img{
+    width: 100%;
+}
+
+
+/* scrolling area */
+
+
+.help-text{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(254, 241, 238);
+    padding: 40px 20px 20px 20px;
+}
+.help-text span{
+    text-align: center;
+    font-family: 'bold';
+    color: #191919ff;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.01px;
+    font-weight: 300;
+    display: block;
+    margin: 0;
+    padding: 0;
+    max-width: 300px;
+}
+.main-scroll{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    width: 100%;
+    background-color: rgb(254, 241, 238);
+}
+.main-scroll-1{
+    margin: 5%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: -10%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+}
+
+.main-scroll-img-1{
+    min-width: 342.5px;
+    height: 180px;
+    object-fit: cover;
+}
+.beauty{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.beauty h2{
+    display: block;
+    text-align: center;
+    width: 90%;
+    margin-top: 20px;
+    color: #191919ff;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: -0.01px;
+    margin-bottom: 0px;
+    font-family: 'bold';
+}
+.beauty span{
+    text-align: center;
+    margin-top: 10px;
+    color: #191919ff;
+    font-family: 'font-2';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+.shop-beauty-btn{
+    margin-top: 20px;
+}
+.shop-beauty-btn button{
+    position: relative;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    min-height: 32px;
+    align-items: center;
+    border-radius: 99999px;
+    border: none;
+    text-align: center;
+    background-color: #EB1700ff;
+    justify-content: flex-start;
+}
+.shop-beauty-btn span{
+    width: 100%;
+    color: white;
+    font-family: 'bold';
+    font-weight: 300;
+    line-height: 20px;
+    font-size: 14px;
+    margin: 0px 12px;
+}
+.send-flower-btn{
+    margin-top: 20px;
+}
+.send-flower-btn button{
+    position: relative;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    min-height: 32px;
+    align-items: center;
+    border-radius: 99999px;
+    border: none;
+    text-align: center;
+    background-color: #EB1700ff;
+    justify-content: flex-start;
+}
+.send-flower-btn span{
+    width: 100%;
+    color: white;
+    font-family: 'bold';
+    font-weight: 300;
+    line-height: 20px;
+    font-size: 14px;
+    margin: 0px 12px;
+}
+.shop-alcohol-btn{
+    margin-top: 20px;
+}
+.shop-alcohol-btn button{
+ position: relative;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    min-height: 32px;
+    align-items: center;
+    border-radius: 99999px;
+    border: none;
+    text-align: center;
+    background-color: #EB1700ff;
+    justify-content: flex-start;
+}
+.shop-alcohol-btn span{
+       width: 100%;
+    color: white;
+    font-family: 'bold';
+    font-weight: 300;
+    line-height: 20px;
+    font-size: 14px;
+    margin: 0px 12px;
+}
+.alcohol-txt span{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #191919ff;
+    font-family: 'bold';
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: -0.01px;
+    padding: 0;
+}
+.main-scroll-2{
+    margin: 5% ;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+}
+.unlock-dasher{
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px 20px;
+    width: 100%;
+}
+.unlock-dasher span{
+    display: block;
+    font-family: 'bold';
+    text-align: center;
+    max-width: 300px;
+    color: #191919ff;
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 28px;
+    letter-spacing: -0.01px;
+}
+.sign-up-main{
+    width: 100%;
+}
+.sign-up-sub{
+    margin-bottom: -300px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    min-width: 90%;
+    align-items: center;  
+}
+.sign-up-imgage{
+    width: 100%;
+}
+.sign-up-image-one{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.sign-up-sub-2 h2{
+    text-align: left;
+    max-width: 90%;
+    margin: 20px 0px 0px 0px;
+    font-family: 'bold';
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 28px;
+    letter-spacing: -0.01px;
+    display: block;
+    color: #191919ff;   
+}
+.sign-up-btn{
+margin-top: 20px;
+}
+.sign-up-btn button{
+      position: relative;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    min-height: 32px;
+    align-items: center;
+    border-radius: 99999px;
+    border: none;
+    text-align: center;
+    background-color: #EB1700ff;
+    justify-content: flex-start;
+}
+.sign-up-btn span{
+        width: 100%;
+    color: white;
+    font-family: 'bold';
+    font-weight: 300;
+    line-height: 20px;
+    font-size: 14px;
+    margin: 0px 12px;
+}
+.sub-2-span{
+    text-align: left;
+    margin-top: 10px;
+    font-family: 'font-2';
+    color: #191919ff;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    font-size: 14px;
+    display: block;
+}
+.partner-up-main{
+    width: 100%;
+}
+
+.partner-up-sub{
+    background-color: rgb(254, 241, 238);
+    padding: 320px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    min-width: 90%;
+    align-items: center;
+}
+.neighborhood{
+    width: 100%;
+    padding: 24px 16px 24px 16px;
+    margin: 0px auto; 
+    max-width: 1130px;
+}
+.neighborhood h2{
+    font-family: 'bold';
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0;
+    color: #191919ff;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 100;
+    letter-spacing: -0.01px;
+    display: block;
+}
+.main-cities{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    gap: 24px;
+}
+.tops{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.top-cities{
+    width: 33.33%;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #ffffff;
+    transition: background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    padding-bottom: 12px;
+    box-shadow: 0 3px 0 #191919ff;
+    border-bottom: 3px solid transparent;
+}
+.top-cities:hover{
+    background-color: #f1f1f1ff;
+    cursor: pointer;
+}
+.top-cities span{
+    color: #191919ff;
+    font-family: 'bold';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    display: block;
+    letter-spacing: -0.01px;
+    margin: 0;
+    padding: 0;
+}
+.top-cuisines{
+    width: 33.33%;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #ffffff;
+    padding-bottom: 12px;
+    box-shadow: 0 2px 0 #f1f1f1ff;
+    border-bottom: 2px solid transparent;
+}
+.top-cuisines span{
+    color: #606060ff;
+    font-family: 'font-2';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    display: block;
+    letter-spacing: -0.01px;
+    margin: 0;
+    padding: 0;
+}
+.top-chains{
+    width: 33.33%;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #ffffff;
+    padding-bottom: 12px;
+    box-shadow: 0 2px 0 #f1f1f1ff;
+    border-bottom: 2px solid transparent;
+}   
+.top-chains span{
+    color: #606060ff;
+    font-family: 'font-2';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    display: block;
+    letter-spacing: -0.01px;
+    margin: 0;
+    padding: 0; 
+}
+.cities-div{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+.cities{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.cities span{
+    color: #191919ff;
+    font-family: 'font-2';
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+.see-more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+.see-more span{
+    margin: 0px 8px 0px 0px;
+    color: #191919ff;
+    font-family: 'bold';
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+.see-more button{
+    position: relative;
+    max-width: 100%;
+    margin: 0;
+    display: inline-flex;
+    min-height: 40px;
+    height: 40px;
+    width: 40px;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+/* FOOTER */
+.end{
+    width: 100vw;
+    background-color: #191919ff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.end-2{
+    width: 1184px;
+    display: block;
+}
+footer{
+    max-width: 1160px;
+    padding: 0px 20px 0px 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.footer-main{
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    flex: 1 1 0%;
+}
+.footer-main h2{
+    margin-bottom: 8px;
+    margin-top: 0;
+    color: rgb(255, 255, 255);
+    font-family: 'font-2';
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    letter-spacing: -0.01px;
+    display: block;
+}
+.footer-main-sub{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+}
+.footer-main-sub-1 span{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+    margin-top: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: block;
+    color: rgb(196, 196, 196);
+    font-family: 'font-2';
+}
+.footer-main-sub-2 span{
+     display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+    margin-top: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: block;
+    color: rgb(196, 196, 196);
+    font-family: 'font-2';
+}
+.footer-main-sub-2 a{
+    text-decoration: none;
+}
+.footer-main-sub-1 a{
+    text-decoration: none;
+}
+.get-to-know{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.play-store{
+       padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 0%;
+
+}
+.play-store-one{
+    padding: 2px 8px;
+    border-radius: 8px;
+    background-color: rgb(73,73,73);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+
+}
+
+.get-to-know{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.get-to-know-sub{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+    justify-content: space-between;
+    text-align: center;
+    gap: 12px;
+}
+.sub-one{
+display: flex;
+flex-direction: column;
+padding-top: 32px;
+}
+.sub-one h2{
+margin-top: 0;
+margin-bottom: 8px;
+color: rgb(245, 245, 245);
+font-family: 'font-2';
+font-size: 16px;
+line-height: 22px;
+font-weight: 500;
+display: block;
+letter-spacing: -0.01px;
+}
+.sub-two{
+padding-top: 32px;
+display: flex;
+flex-direction: column;
+}
+.sub-two h2{
+ margin-top: 0;
+margin-bottom: 8px;
+color: rgb(245, 245, 245);
+font-family: 'font-2';
+font-size: 16px;
+line-height: 22px;
+font-weight: 500;
+display: block;
+letter-spacing: -0.01px;
+}
+.sub-three{
+padding-top: 32px;
+display: flex;
+flex-direction: column;
+}
+.sub-three h2{
+margin-top: 0;
+margin-bottom: 8px;
+color: rgb(245, 245, 245);
+font-family: 'font-2';
+font-size: 16px;
+line-height: 22px;
+font-weight: 500;
+display: block;
+letter-spacing: -0.01px;
+}
+.social-media{
+    flex-direction: column-reverse;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 32px 0px 32px 0px;
+}
+.social-media-one{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 12px;
+}
+.footer-dd-logo{
+   max-width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start; 
+   flex-direction: row;
+}
+.social-media-one span{
+    color: rgb(196, 196, 196);
+    font-family: 'font-2';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    text-decoration: none;
+    letter-spacing: -0.01px;
+    display: block;
+}
+.social-media-one a{
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 16px;
+}
+.twitter{
+    margin-left: 12px;
+}
+.instagram{
+    margin-left: 12px;
+}
+.language{
+    display: flex;
+    min-height: 32px;
+    padding: 12px;
+}
+.btn-div{
+    font-size: 14px;
+    font-family: 'font-2';
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    font-weight: 300;
+    color: #191919ff;
+    align-items: center;
+    display: flex;
+    margin: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.language button{
+    border-radius: 32px;
+    border: none;
+    
+}
+.globe{
+    margin-right: 8px;
+    max-width: 100%;
+}
+.social-media-three{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.btn-div span{
+    margin-right: -8px;
+}
+.media-main-sign-in{
+    display: none;
+}
+.media-main-sign-up{
+    display: none;
+}
+.media-navigation-bar{
+    display: none;
+}
+.media-location-bar{
+    display: none;
+}
+.mobile{
+    display: block;
+}
+.tablet{
+    display: none;
+}
+.laptop{
+    display: none;
+}
+.shopping-img-class-two{
+    display: none;
+}
+.main-scroll-img-1-768px{
+    display: none;
+}
+.sign-up-image-one-768px{
+    display: none;
+}
+.eating-class-two{
+    display: none;
+}
+.fooding-two{
+    display: none;
+}
+.fooding-one{
+    width: 100%;
+}
+.media-signin-text-760px{
+    display: none;
+}
+
+
+/* MEDIA QUERY */
+
+
+
+
+@media (min-width: 480px){
+    .neighborhood{
+        padding: 48px 0px 48px 0px;
+    }
+    .top-cities{
+        padding-bottom: 0;
+        box-shadow: none;
+        border-bottom: 3px solid;
+    }
+    .top-chains{
+        padding-bottom: 0;
+        box-shadow: none;
+        border-bottom: 2px solid #f1f1f1ff;
+    }
+    .top-cuisines{
+        padding-bottom: 0;
+        box-shadow: none;
+        border-bottom: 2px solid #f1f1f1ff; 
+    }
+}
+
+@media (min-width: 516px){
+    .cities{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   }
+}
+
+
+/* media query 768px */
+
+
+@media (min-width: 768px){
+    .main{
+        display: none;
+    }
+    .container-app{
+        display: none;
+    }
+   .delivery{
+    flex-grow: 1;
+   }
+   .open-app{
+    display: none;
+   }
+    .media-main-sign-in{
+    position: absolute;
+    top: 16px;
+    right: 98px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 24px;
+    cursor: pointer;
+   }
+   .media-main-sign-in button{
+    min-height: 40px;
+    align-items: center;
+    max-width: 100%;
+    background: #EB1700;
+    color: rgb(245, 245, 245);
+    border: none;
+    border-radius: 9999px;
+    font-weight: 500;
+    font-family: 'bold';
+    line-height: 22px;
+    font-size: 18px;
+    letter-spacing: -0.01px;
+    padding: 0 12px;
+   }
+   .media-main-sign-up{
+    position: absolute;
+    top: 16px;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 24px;
+    cursor: pointer;
+   }
+   .media-main-sign-up button{
+    min-height: 40px;
+    align-items: center;
+    max-width: 100%;
+    background: white;
+    color: #606060ff;
+    border: none;
+    border-radius: 9999px;
+    font-weight: 500;
+    font-family: 'bold';
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    padding: 0 12px;
+   }
+   .main-doordash{
+    margin-top: 24px;
+    margin-bottom: 24px;
+   }
+   .main-background{
+    height: 650px;
+    padding: 0px 8px 0px 8px;
+   }
+   .search-bar{
+    display: none;
+   }
+   .media-location-bar{
+    margin-right: 10px;
+    max-width: 100%;
+    width: 24px;
+    height: 24px;     
+    display: block;
+    margin-right: 12px;
+   }
+ .arrow-bar{
+    background-color: #EB1700ff;
+    border-radius: 999999px;;
+ }
+   .arrow-bar svg path{
+    fill: #ffffff;
+   }
+   .delivery-address{
+    padding: 8px 8px 8px 20px;
+   }
+ .h1-text-div {
+  display: flex;
+  justify-content: center;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.h1-text-div h1 {
+  font-family: "TTNormsProCond-Bd", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 28px;
+  letter-spacing: 0px;
+  max-width: 350px;
+  margin: 0;
+}
+.login-text{
+    display: none;
+}
+.laptop{
+    display: block;
+}
+    .delivery-address{
+        min-width: 408px;
+    }
+    .additional{
+        display: flex;
+        flex-grow: 1;
+        margin-left: -2px;
+    }
+    .media-signin-text{
+        font-family: 'bold';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: -0.01px;
+    }
+    .login-button{
+        width: 88.73px;
+        gap: 4px;
+    }
+    .sub-container{
+        margin: 32px 0px 32px 0px;
+    }
+    .dasher-img{
+        margin: 0px 64px 0px 0px;
+    }
+    .scooty{
+    width: 124px;
+    height: 124px;
+    }
+    .merchant-img{
+        margin: 0px 64px 0px 0px;
+    }
+    .shop{
+        width: 124px;
+        height: 124px;
+    }
+    .phone-img{
+        margin: 0px 64px 0px 0px;
+    }
+    .mob{
+        width: 124px;
+        height: 124px
+    }
+    .main-container{
+        max-width: 768px;
+    }
+    .restaurant{
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 1184px;
+        margin-bottom: -52px;
+        gap: 60px;
+    }
+    .eating{
+        width: 100%;
+    }
+    .restaurant img{
+        height: 500px;
+        width: 100%;
+    }
+    .restaurant-sub{
+        margin-top: 4px;
+    }
+    .restaurant-sub h2{
+        font-size: 40px;
+        line-height: 40px;
+        font-weight: 300;
+        letter-spacing: -0.01px;
+        margin-top: 20px;
+    }
+    .local-restaurant{
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 300;
+        margin-top: 20px;
+    }
+    .local-restaurant-2{
+        font-size: 16px;
+        font-weight: 200;
+        line-height: 22px;
+    }
+    .restaurant-btn{
+        margin-top: 30px;
+    }
+    .restaurant-btn span{
+        font-size: 16px;
+    }
+    .restaurant-btn button{
+        height: 40px;
+    }
+    .dashpass{
+        padding-top: 80px;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-bottom: 24px;
+        display: flex;
+        flex-direction: row;
+        max-width: 1184px;
+        gap: 60px;
+    }
+    .dashpass-sub{
+        margin-top: 4px;
+    }
+    .doordashbusiness{
+        width: 100%;
+    }
+    .food{
+        width: 100%;
+    }
+    .food img{
+        width: 100%;
+        height: 500px;
+    }
+    .dashpass-sub h2{
+        font-size: 40px;
+        letter-spacing: -0.01px;
+        line-height: 40px;
+        margin-top: 20px;
+    }
+     .dashpass-sub span{
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: 20px;
+     }
+     .dashpass-btn span{
+        margin-top: 0;
+     }
+     .dashpass-btn{
+        margin-top: 30px;
+     }
+     .dashpass-btn button{
+        height: 40px;
+     }
+     .groceries{
+        height: 600px;
+        position: relative;
+     }
+     .grocery-overlay{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+     .groceries-sub h2{
+        font-size: 40px;
+        line-height: 40px;
+     }
+     .delivery-text-1{
+        font-size: 20px;
+        margin-top: 20px;
+        line-height: 24px;
+     }
+     .delivery-text-2{
+        font-size: 16px;
+        line-height: 22px;
+     }
+     .grocery-btn{
+        margin-top: 30px;
+     }
+     .grocery-btn span{
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: -0.01px;
+        font-family: 'bold';
+    }
+     .grocery-btn button{
+        height: 40px;
+     }
+     .shopping-img{
+     width: 100%;
+     }
+     .shopping-img img{
+        width: 100%;
+        height: 500px;
+     }
+     .stores{
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 1184px;
+        margin-bottom: -36px;
+        padding-top: 60px;
+        gap: 60px;
+     }
+     .shopping-img-class-one{
+        display: none;
+     }
+     .shopping-img-class-two{
+        display: block;
+     }
+     .shopping-sub h2{
+        font-size: 40px;
+        line-height: 40px;
+     }
+     .shopping-sub{
+        margin-top: 4px;
+     }
+     .shopping-sub span{
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: 20px;
+     }
+     .shop-btn{
+        margin-top: 30px;
+     }
+     .shop-btn button span{
+        margin-top: 0;
+     }
+     .shop-btn button{
+        height: 40px;
+     }
+     .help-text{
+        padding: 60px 20px 40px;
+        width: 100%;
+     }
+     .help-text span{
+        font-size: 32px;
+        line-height: 40px;
+        max-width: 500px;
+     }
+     .main-scroll-img-1{
+        display: none;
+     }
+     .main-scroll-img-1-768px{
+        display: block;
+        width: 100%;
+        height: 100%;
+        height: 344px;
+        object-fit: cover;
+        object-position: center center; 
+
+     }
+     .main-scroll{
+        display: flex;
+        flex-flow: wrap;
+        width: 100%;
+        overflow-x: hidden;
+     }
+     .main-scroll-1{
+        max-width: 50%;
+        min-width: 50%;
+        margin: 0;
+     }
+     .main-scroll-2{
+        max-width: 50%;
+        min-width: 50%;
+        margin: 0;
+     }
+     .beauty h2{
+        font-size: 40px;
+        line-height: 40px;
+     }
+     .beauty span{
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 22px;
+     }
+     .shop-beauty-btn{
+        margin-top: 30px;
+     }
+     .shop-beauty-btn button span{
+        margin-top: 0;
+     }
+     .shop-beauty-btn button{
+        height: 40px;
+     }
+     .send-flower-btn button{
+        height: 40px;
+     }
+     .send-flower-btn{
+        margin-top: 30px;
+     }
+     .send-flower-btn button span{
+        margin-top: 0;
+     }
+     .shop-alcohol-btn{
+        margin-top: 30px;
+     }
+     .shop-alcohol-btn button{
+        height: 40px;
+     }
+     .shop-alcohol-btn button span{
+        margin-top: 0;
+     }
+     .alcohol-txt span{
+        font-size: 14px;
+        font-family: 'font-2';
+        line-height: 20px;
+     }
+     .unlock-dasher{
+        padding: 60px 20px 40px;
+     }
+     .unlock-dasher span{
+        font-size: 32px;
+        line-height: 40px;
+        max-width: 500px;
+     }
+     .sign-up-main{
+        width: 100%;
+     }
+    .sign-up-image-one{
+        display: none;
+     }
+     .sign-up-imgage{
+        width: 100%;
+     }
+     .sign-up-image-one-768px{
+        display: block;
+        width: 100%;
+        height: 500px;
+        object-fit: cover; 
+        object-position: center center; 
+     }
+     .sign-up-sub{
+        flex-direction: row-reverse;
+        margin-bottom: -56px;
+        justify-content: center;
+        gap: 60px;
+     }
+     .sign-up-sub-2{
+        max-width: 400px;
+        margin-top: 4px;
+        gap: 60px;
+     }
+     .sign-up-sub-2 h2{
+        font-size: 40px;
+        line-height: 40px;
+     }
+     .sub-2-span{
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: 20px;
+     }
+     .sign-up-btn{
+        margin-top: 30px;
+    }
+     .sign-up-btn button span{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .sign-up-btn button{
+        height: 40px;
+    }
+    .partner-up-main{
+        width: 100%;
+    }
+    .partner-up-sub{
+        display: flex;
+        flex-direction: row;
+        padding-top: 80px;
+        justify-content: center;
+        gap: 60px;
+        padding-bottom: 24px;
+    }
+    .footer-main{
+        text-align: left;
+    }
+    .footer-main-sub{
+        flex-direction: row;
+    }
+    .social-media{
+        flex-direction: row;
+        height: 100px;
+    }
+    .footer-main-sub-1{
+        display: flex;
+        flex-direction: column;
+           flex: 1 1 0%;
+    }
+    .get-to-know-sub{
+        justify-content: space-between;
+        flex: 1 1 0%;
+        gap: 12px;
+        flex-direction: row;
+        text-align: left;
+    }
+    .footer-main-sub{
+        gap: 12px;
+        flex: 1 1 0%;
+    }
+    .get-to-know{
+        margin-top: -12px;
+    }
+    .play-store{
+        padding-top: 32px;
+    }
+
+    .eating-class-one{
+        display: none;
+    }
+    .eating-class-two{
+        display: block;
+        object-fit: cover; 
+        object-position: center center; 
+    }
+   .fooding-two{
+        display: block;
+        width: 100%;
+        height: 500px;
+        object-fit: cover; 
+        object-position: center center;
+   }
+   .fooding-one{
+    display: none;
+   }
+  .language{
+    padding: 0 12px;
+ } 
+ .language button{
+    width: 150px;
+    display: flex;
+    min-height: 32px;
+ }
+ .btn-div{
+    position: relative;
+ }
+ .down-arrow{
+    position: absolute;
+    right: -21px;
+ }
+.social-media{
+    align-items: normal;
+}
+.social-media-one{
+    margin-top: 0;
+}
+}
+
+
+/* MEDIA 769px */
+
+
+    @media (min-width: 769px){
+    .h1-text-div h1{
+        font-size: 40px;
+        text-align: center;
+        max-width: 750px;
+        line-height: 40px;
+    }
+}
+
+
+/* MEDIA 782px */
+
+
+ @media (min-width: 782px){
+    .cities{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+        gap: 16px;
+        width: 100%;
+    }
+ }
+
+
+/* MEDIA 960px */
+
+
+
+      @media (min-width: 960px){
+
+    .doordash-logo svg{
+        height: 24px;
+        width: 42px;
+    }
+    .doordash-text svg{
+        height: 18px;
+        width: 155px;
+    }
+    .main-doordash {
+        margin-top: 27px;
+        margin-bottom: 27px;
+        gap: 14px;
+    }
+    .media-signin-text{
+        display: none;
+    }
+    .media-signin-text-760px{
+        display: block;
+        font-family: 'bold';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: -0.01px;
+        white-space: nowrap;
+    }
+    .login-button{
+        width: 203.49px;
+    }
+    .play-store{
+        padding-top: 20px;
+        align-items: flex-end;
+    }
+    .get-to-know{
+            flex-direction: row;
+        }
+      }
+
+
+      /* MEDIA QUERY 1024px */
+
+
+       @media (min-width: 1024px){
+        .eating-class-two{
+            min-width: 524px;
+        }
+        .fooding-two{
+            min-width: 524px;
+        }
+        .main-scroll-img-1{
+            position: relative;
+        }
+        .main-scroll-img-1-768px{
+            height: 472px;
+        }
+        .cities{
+            gap: 16px;
+            grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+            width: 100%;
+        }
+        .get-to-know{
+            flex-direction: row;
+            margin-top: 0;
+        }
+        .play-store{
+            align-items: flex-end;
+        }
+        .restaurant{
+            margin-bottom: -52px;
+        }
+        .social-media{
+            height: 96px;
+        }
+        .social-media-one{
+            margin-top: 7px;
+        }
+        .footer-dd-logo{
+            margin-top: -7px;
+        }
+       }
+
+
+
+       /* MEDIA 1184px  */
+
+
+
+        @media (min-width: 1184px){
+        .main-container{
+        min-width: 1184px;
+    }
+    .three-in-one{
+    flex-direction: row;
+    }
+        
+    .sub-container{
+    margin: 96px 0px 96px 0px;
+    padding: 12px;
+    }
+    .dasher{
+        display: flex;
+        flex-direction: column;
+    }
+    .merchant{
+        display: flex;
+        flex-direction: column;
+    }
+    .phone{
+        display: flex;
+        flex-direction: column;
+    }
+    .three-in-one h2{
+        text-align: center;
+    }
+    .three-in-one h3{
+        text-align: center;
+    }
+   
+    .dasher-img{
+        justify-content: center;
+        display: flex;
+    }
+    .merchant-img{
+        display: flex;
+        justify-content: center;
+    }
+    .phone-img{
+        display: flex;
+        justify-content: center;
+    }
+    .scooty,.shop,.mob{
+        height: 154px;
+        width: 154px;
+    }
+    .text-btn,.text-btn-2,.text-btn-3{
+        font-size: 18px;
+    }
+    .three-in-one h3{
+        margin-top: 8px;
+    }
+    .three-in-one button{
+        justify-content: center;
+        margin-top: 13px;
+    }
+
+    .restaurant-sub{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .eating-class-two{
+        min-width: 684px;
+    }
+    .fooding-two{
+        min-width: 684px;
+    }
+    .shopping-img-class-two{
+        min-width: 684px;
+    }
+    .main-scroll-img-1-768px{
+        min-height: 552px;
+    }
+
+    }
+
+
+/* MEDIA 1440px */
+
+
+
+@media (min-width: 1440px){
+  .restaurant{
+    margin: 0 auto;
+    margin-bottom: -52px;
+    min-width: auto;
+  }
+  .dashpass{
+    max-width: 1440px;
+    justify-content: center;
+  }
+  .doordashbusiness{
+    display: flex;
+  }
+  .restaurant-sub{
+    margin: 0;
+  }
+  .eating-class-two{
+    max-width: 695.02px;
+    margin-top: 1px;
+  }
+  .fooding-two{
+    max-width: 724px;
+  }
+  .stores{
+    min-width: auto;
+    margin: 0 auto;
+    margin-bottom: -36px;
+    max-width: 1195px;
+  }
+    .shopping-img img{
+    max-width: 695.02px;
+    width: fit-content;
+  }
+  .restaurant img{
+    width: 695.02px;
+  }
+  .restaurant-sub{
+    margin-bottom: -5px;
+  }
+  .local-restaurant-2{
+    width: 100%;
+  }
+  .restaurant{
+    max-width: 1195px;
+  }
+  .food{
+    width: fit-content;
+  }
+  .dashpass-sub{
+    max-width: 400px;
+  }
+  .main-scroll-1{
+    align-items: flex-end;
+  }
+  .flex-end{
+    align-items: flex-start;
+  }
+  .main-scroll{
+    max-width: 1184px;
+    margin: auto;
+  }
+ .beauty-margin{
+    margin-left: 4px;
+ }
+  .beauty h2{
+    width: 100%;
+  }
+  .sign-up-sub{
+    max-width: 1195px;
+    margin: 0 auto;
+    margin-bottom: -52px;
+    min-width: auto;
+    padding-bottom: 16px;
+  }
+  .sign-up-imgage{
+    width: fit-content;
+  }
+  .sign-up-imgage img{
+    width: 724px;
+  }
+  .walking-dead img{
+    width: 695.02px;
+  }
+.partner-up-sub{
+    max-width: 1440px;
+    justify-content: center;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
