@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb</title>
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    
+<header>
+<div class="search-header">
+    <button>
+  <div class="search-bar">
+  <div class="search-location">
+    Where
+  </div>
+  <input class="location-input" type="search" placeholder="Search destinations">
+
+</div>
+<div class="divider"></div>
+
+<div class="checkin-box">
+  <div class="checkin-title">Check in</div>
+  <div class="checkin-subtext">Add dates</div>
+</div>
+
+<div class="divider"></div>
+
+<div class="checkout-box">
+  <div class="checkout-title">Check out</div>
+  <div class="checkout-subtext">Add dates</div>
+</div>
+
+<div class="divider"></div>
+
+<div class="guests-box">
+  <div class="guests-title">Who</div>
+  <div class="guests-subtext">Add guests</div>
+  <div class="search-button">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
+      <path fill="none" d="M13 24a11 11 0 1 0 0-22 11 11 0 0 0 0 22zm8-3 9 9"></path>
+    </svg>
+  </div>
+</div>
+        <span style="margin-top: 3px;"> <svg class="search-logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="height: 12px; width: 12px; fill: currentcolor;"><path d="M13 0a13 13 0 0 1 10.5 20.67l7.91 7.92-2.82 2.82-7.92-7.91A12.94 12.94 0 0 1 13 26a13 13 0 1 1 0-26zm0 4a9 9 0 1 0 0 18 9 9 0 0 0 0-18z"></path></svg> </span> 
+        <span> <h1 class="search-text">Start your search</h1> </span> 
+   </button>
+</div>
+<div class="main-nav">
+    <div class="air-bnb-symbol">
+    <svg width="30" height="32" viewBox="0 0 1007 1080" style="display: block;"><path d="M949.278 666.715C875.957 506.859 795.615 344.664 713.713 184.809C698.893 155.177 670.813 98.2527 645.852 67.8412C609.971 24.1733 556.93 0.779785 503.109 0.779785C449.288 0.779785 396.247 24.1733 360.366 67.8412C335.406 98.2527 307.325 155.177 292.505 184.809C210.603 344.664 130.262 506.859 56.9404 666.715C47.5802 687.769 24.9598 737.675 16.3796 760.289C6.23941 787.581 0.779297 817.213 0.779297 846.845C0.779297 975.509 101.401 1079.22 235.564 1079.22C346.326 1079.22 434.468 1008.26 503.109 934.18C571.751 1008.26 659.892 1079.22 770.655 1079.22C904.817 1079.22 1006.22 975.509 1006.22 846.845C1006.22 817.213 999.979 787.581 989.839 760.289C981.259 737.675 958.638 687.769 949.278 666.715ZM503.109 810.195C447.728 738.455 396.247 649.56 396.247 577.819C396.247 506.079 446.948 470.209 503.109 470.209C559.27 470.209 610.751 508.419 610.751 577.819C610.751 647.22 558.49 738.455 503.109 810.195ZM770.655 998.902C688.628 998.902 618.271 941.557 555.955 872.656C620.205 792.541 691.093 679.121 691.093 577.819C691.093 458.513 598.271 389.892 503.109 389.892C407.947 389.892 315.906 458.513 315.906 577.819C315.906 679.098 386.294 792.478 450.318 872.593C387.995 941.526 317.614 998.902 235.564 998.902C146.642 998.902 81.1209 931.061 81.1209 846.845C81.1209 826.57 84.241 807.856 91.2611 788.361C98.2812 770.426 120.902 720.52 130.262 701.025C203.583 541.17 282.365 380.534 364.267 220.679C379.087 191.047 404.047 141.921 422.768 119.307C443.048 94.3538 471.129 81.0975 503.109 81.0975C535.09 81.0975 563.17 94.3538 583.451 119.307C602.171 141.921 627.132 191.047 641.952 220.679C723.854 380.534 802.635 541.17 875.957 701.025C885.317 720.52 907.937 770.426 914.957 788.361C921.978 807.856 925.878 826.57 925.878 846.845C925.878 931.061 859.576 998.902 770.655 998.902Z" fill="#FF385c"></path></svg>
+</div>
+    <div class="globe-symbol">
+       <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 16px; width: 16px; fill: currentcolor;"><path d="M8 .25a7.77 7.77 0 0 1 7.75 7.78 7.75 7.75 0 0 1-7.52 7.72h-.25A7.75 7.75 0 0 1 .25 8.24v-.25A7.75 7.75 0 0 1 8 .25zm1.95 8.5h-3.9c.15 2.9 1.17 5.34 1.88 5.5H8c.68 0 1.72-2.37 1.93-5.23zm4.26 0h-2.76c-.09 1.96-.53 3.78-1.18 5.08A6.26 6.26 0 0 0 14.17 9zm-9.67 0H1.8a6.26 6.26 0 0 0 3.94 5.08 12.59 12.59 0 0 1-1.16-4.7l-.03-.38zm1.2-6.58-.12.05a6.26 6.26 0 0 0-3.83 5.03h2.75c.09-1.83.48-3.54 1.06-4.81zm2.25-.42c-.7 0-1.78 2.51-1.94 5.5h3.9c-.15-2.9-1.18-5.34-1.89-5.5h-.07zm2.28.43.03.05a12.95 12.95 0 0 1 1.15 5.02h2.75a6.28 6.28 0 0 0-3.93-5.07z"></path></svg></button> 
+    </div>
+    <div class="menu-symbol">
+       <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;"><g fill="none"><path d="M2 16h28M2 24h28M2 8h28"></path></g></svg></button> 
+    </div>
+    <div class="navigation">
+        
+        <div class="homes">
+        <span class="video-span" ><video class="homes-video" src="https://a0.muscache.com/videos/search-bar-icons/webm/house-twirl-selected.webm"width="36" height="36" autoplay muted playinline></video></span>
+        <a class="border-bottom" href="#">Homes</a>
+        </div>
+        <div class="experience">
+            <span class="video-span" > <video class="experience-video" src="https://a0.muscache.com/videos/search-bar-icons/hevc/balloon-selected.mov#t=0.001"width="36" height="36" autoplay muted playinline></video></span>
+            <span class="new-text-container">
+                <span class="new-text-wrapper">
+                    NEW
+                </span>
+             </span>
+        <a class="experience-text" href="#">Experiences</a>
+        </div>
+        <div class="services">
+            <span  class="video-span" ><video class="services-video" src="https://a0.muscache.com/videos/search-bar-icons/hevc/consierge-selected.mov#t=0.001"width="36" height="36" autoplay muted playinline></video></span>
+            <span class="new-text-container">
+                <span class="new-text-wrapper">
+                    NEW
+                </span>
+             </span>
+        <a class="services-text" href="#">Services</a>
+        </div>
+    </div>
+</div>
+
+</header>
+
+<main class="main-content-full">
+    <div class="main-content">
+
+
+<!-- section one -->
+
+
+        <div class="main-content-first-section">
+            <div class="main-section-text-h2">
+                <span><h2>Popular homes in Bengaluru</h2></span>
+                <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible;"><path fill="#f1f1f1f1" d="m12 4 11.3 11.3a1 1 0 0 1 0 1.4L12 28"></path></svg></span>
+            </div>
+            <div class="apartments">
+                <div class="apartments-scroll">
+                    <div class="apartment-section-one">
+                <div class="apartments-image">
+                    <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-1118422882348724135/original/a40a9fc3-9bee-46fc-bc33-61dd649cd6a8.jpeg?im_w=320" alt="">
+                    <div class="guest-love">
+                        <span class="guest-favourite-text"> Guest favourite</span>
+                    </div>
+                        <div class="love-emoji">
+                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: white; stroke-width: 2; overflow: visible;"><path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path></svg>
+                       </div>
+                    </div>
+                    <div class="apartments-details">
+                        <div class="detail-text-one">
+                        <span>Apartment in Koramangala</span>
+                        </div>
+                        <div class="detail-text-two">
+                        <span>₹6,504 for 2 nights</span>
+                        <span class="dot"> .</span>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 8px; width: 8px; fill: currentcolor;"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg></span>
+                        <span>4.91</span>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="apartment-section-one">
+                <div class="apartments-image">
+                    <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-1413858431883771385/original/1b106e35-1218-4e67-9f83-7d55e739c9ab.jpeg?im_w=320" alt="">
+                    <div class="guest-love">
+                        <span class="guest-favourite-text"> Guest favourite</span>
+                    </div>
+                        <div class="love-emoji">
+                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: white; stroke-width: 2; overflow: visible;"><path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path></svg>
+                       </div>
+                    </div>
+                    <div class="apartments-details">
+                        <div class="detail-text-one">
+                        <span>Flat in Bangalore Urban</span>
+                        </div>
+                        <div class="detail-text-two">
+                        <span>₹5,478 for 2 nights</span>
+                        <span class="dot" >.</span>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 8px; width: 8px; fill: currentcolor;"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg></span>
+                        <span>5.0</span>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="apartment-section-one">
+                <div class="apartments-image">
+                    <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-1270314768198309910/original/c389f712-5665-4b38-b83b-29f9b8fd73d0.jpeg?im_w=320" alt="">
+                    <div class="guest-love">
+                        <span class="guest-favourite-text"> Guest favourite</span>
+                    </div>
+                        <div class="love-emoji">
+                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: white; stroke-width: 2; overflow: visible;"><path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path></svg>
+                       </div>
+                    </div>
+                    <div class="apartments-details">
+                        <div class="detail-text-one">
+                        <span>Flat in Bangalore Urban</span>
+                        </div>
+                        <div class="detail-text-two">
+                        <span>₹8,103 for 2 nights</span>
+                        <span class="dot" >.</span>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 8px; width: 8px; fill: currentcolor;"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg></span>
+                        <span>4.94</span>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="apartment-section-one">
+                <div class="apartments-image">
+                    <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-1062138324750652737/original/e63ff88a-c09d-4f75-88ee-87f4fa987621.jpeg?im_w=320" alt="">
+                    <div class="guest-love">
+                        <span class="guest-favourite-text"> Guest favourite</span>
+                    </div>
+                        <div class="love-emoji">
+                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: white; stroke-width: 2; overflow: visible;"><path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path></svg>
+                       </div>
+                    </div>
+                    <div class="apartments-details">
+                        <div class="detail-text-one">
+                        <span>Home in Bangalore Urban</span>
+                        </div>
+                        <div class="detail-text-two">
+                        <span>₹8,103 for 2 nights</span>
+                        <span class="dot" >.</span>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 8px; width: 8px; fill: currentcolor;"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg></span>
+                        <span>4.94</span>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="apartment-section-one">
+                <div class="apartments-image">
+                    <img src="https://a0.muscache.com/im/pictures/miso/Hosting-1421831971398934420/original/a4a9e04f-2457-4507-bcae-b76a4242adb3.jpeg?im_w=320" alt="">
+                    <div class="guest-love">
+                        <span class="guest-favourite-text"> Guest favourite</span>
+                    </div>
+                        <div class="love-emoji">
+                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: white; stroke-width: 2; overflow: visible;"><path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path></svg>
+                       </div>
+                    </div>
+                    <div class="apartments-details">
+                        <div class="detail-text-one">
+                        <span>flat in Bangalore Urban</span>
+                        </div>
+                        <div class="detail-text-two">
+                        <span>₹2,853 for 2 nights</span>
+                        <span class="dot">.</span>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 8px; width: 8px; fill: currentcolor;"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg></span>
+                        <span>5.0</span>
+                        </div>
+                    </div>
+                    </div>
+                     <div class="apartment-section-one">
+                <div class="apartments-image">
+                    <img src="https://a0.muscache.com/im/pictures/miso/Hosting-1146950113191217557/original/0f674d67-0cbb-4ed1-9ccf-ae6e5b5188de.jpeg?im_w=320" alt="">
+                    <div class="guest-love">
+                        <span class="guest-favourite-text"> Guest favourite</span>
+                    </div>
+                        <div class="love-emoji">
+                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: white; stroke-width: 2; overflow: visible;"><path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path></svg>
+                       </div>
+                    </div>
+                    <div class="apartments-details">
+                        <div class="detail-text-one">
+                        <span>Loft in Richmond Town</span>
+                        </div>
+                        <div class="detail-text-two">
+                        <span>₹9,187 for 2 nights</span>
+                        <span class="dot">.</span>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 8px; width: 8px; fill: currentcolor;"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg></span>
+                        <span>5.0</span>
+                        </div>
+                    </div>
+                    </div>
+                     <div class="apartment-section-one">
+                <div class="apartments-image">
+                    <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-1096365467309628265/original/aa2f1eed-2157-4932-8be8-ebe60a697732.jpeg?im_w=320" alt="">
+                    <div class="guest-love">
+                        <span class="guest-favourite-text"> Guest favourite</span>
+                    </div>
+                        <div class="love-emoji">
+                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: white; stroke-width: 2; overflow: visible;"><path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path></svg>
+                       </div>
+                    </div>
+                    <div class="apartments-details">
+                        <div class="detail-text-one">
+                        <span>Flat in Koramangala</span>
+                        </div>
+                        <div class="detail-text-two">
+                        <span>₹6,391 for 2 nights</span>
+                        <span class="dot">.</span>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 8px; width: 8px; fill: currentcolor;"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg></span>
+                        <span>4.88</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<!-- second section -->
+
+
+     
+    </div>
+</main>
+
+</body>
+</html>
+
+
+
+
+
