@@ -131,6 +131,7 @@ button span h1{
     display: flex;
     align-items: center;
     margin: 32px 24px 14px 24px;
+    position: relative;
 }
 .main-section-text-h2 h2{
     font-family: 'bold';
@@ -143,6 +144,11 @@ button span h1{
 .main-section-text-h2 span svg{
     margin-left: 2px;
     margin-top: -1px;
+}
+.apartments{
+    padding: 0;
+    margin-top: -4px;
+    margin-bottom: -8px;
 }
 .apartments-scroll {
     margin-top: -4px;
@@ -216,7 +222,7 @@ button span h1{
     font-size: 13px;
 }
 .detail-text-two{
-    gap: 2px;
+    gap: 3px;
     display: flex;
     align-items: center;
     font-family: 'bold';
@@ -252,7 +258,182 @@ button span h1{
 .guests-box{
     display: none;
 }
+.next-arrow-container{
+    display: none;
+}
+.air-bnb-logo-text{
+    display: none;
+}
+.search-header button{
+    max-width: 850px;
+}
+.become-host{
+    display: none;
+}
 
 
 
+/* \\footer */
+
+
+
+.future-getaways{
+    position: relative;
+}
+.future-getaways-text{
+    padding: 48px 24px;
+}
+.future-getaways-text h2{
+    margin-bottom: 8px;
+    font-family: 'bold';
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 500;
+    letter-spacing: -0.22px;
+}
+.single-line{
+    max-width: 1920px;
+    background-color: #dddddd;
+    height: 1px;
+ 
+}
+.footer-left-arrow{
+    position: absolute;
+    left: 12px;
+    top: 100px;
+    border: none;
+    box-shadow: none;
+    background-color: white;
+    padding: 0;
+}
+
+.footer-right-arrow{
+    position: absolute;
+    right: 12px;
+    top: 100px;
+    border: none;
+    box-shadow: none;
+    background-color: white;
+    padding: 0;
+}
+.footer-about{
+    padding: 0px 24px;
+    display: grid;
+    grid-template-columns: repeat(1,minmax(0, 1fr));
+    column-gap: 16px;
+}
+.about-h3-text{
+    color: #222222;
+    margin-bottom: 16px;
+    font-family: 'bold';
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    letter-spacing: normal;
+}
+.support-section{
+    padding: 24px 0px;
+    border-bottom: 1px solid #dddddd;
+}
+.footer-lists{
+    display: grid;
+    gap: 16px;
+    list-style-type: none;
+    padding: 0;
+}
+.footer-lists a{
+    font-family: 'bold';
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 2px;
+    font-weight: 400;
+    color: #222222;
+    text-align: left;
+}
+.footer-end-language{
+    display: flex;
+    margin-bottom: 8px;
+    margin-left: -8px;
+
+}
+.inr-symbol-text{
+    display: flex;
+    font-family: 'bold';
+    padding: 6px 8px;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    gap: 8px;
+}
+.english-globe{
+    display: flex;
+    font-family: 'bold';
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'bold';
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+}
+.language-money{
+    padding: 6px 8px;
+}
+.english-globe{
+    margin-right: 4px;
+}
+.social-media-logo-list{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    padding: 0px;
+    margin-left: 8px;
+}
+.footer-end-social-media{
+    display: flex;
+    margin-bottom: 12px;
+    margin-left: -8px;
+    padding: 8px 0px 8px;
+}
+.social-media-logo-list li{
+    margin-right: 4px;
+}
+.airbnb-inc{
+    font-size: 14px;
+    font-family: 'bold';
+    line-height: 18px;
+    color: rgb(34,34,34);
+    margin-bottom: 4px;
+}
+.privacy-terms-sitemaps-details{
+    font-family: 'bold';
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: normal;
+}
+.privacy-terms-sitemaps-details-list{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.final-dot{
+    padding: 0px 8px;
+    text-align: center !important;
+}
+.last{
+    padding: 0px 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: none;
+}
+footer{
+    padding-bottom: 80px;
+}
+
+.final-dot-pre{
+    display: none;
+}
 
