@@ -267,7 +267,7 @@
     }
     .footer-end-744px{
         display: flex;
-        justify-content: space-between !important;
+        justify-content: space-between;
         margin-bottom: 8px;
         height: 33px;
     }
@@ -280,7 +280,7 @@
     .final-dot-pre{
         display: block;
         padding: 0px 8px;
-        text-align: center !important;
+        text-align: center;
     }
     .footer-about,
     .last{
@@ -301,6 +301,10 @@
     .main-section-text-h2 span svg{
         margin-top: 1px;
     }
+    .airbnb-inc{
+        margin-bottom: 4px;
+    }
+ 
 }
 
 
@@ -435,6 +439,7 @@
         margin: 32px 48px 14px 48px;
     }
 }
+
 
 
 

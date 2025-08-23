@@ -393,7 +393,7 @@ button span h1{
 }
 .footer-end-social-media{
     display: flex;
-    margin-bottom: 12px;
+    margin-bottom: 13px;
     margin-left: -8px;
     padding: 8px 0px 8px;
 }
@@ -405,7 +405,7 @@ button span h1{
     font-family: 'bold';
     line-height: 18px;
     color: rgb(34,34,34);
-    margin-bottom: 4px;
+    margin-bottom: 5px;
 }
 .privacy-terms-sitemaps-details{
     font-family: 'bold';
@@ -417,8 +417,9 @@ button span h1{
     display: flex;
     list-style-type: none;
     padding: 0;
+    margin-top: 0px;
+    margin-bottom: 1px;
 }
-
 .final-dot{
     padding: 0px 8px;
     text-align: center !important;
@@ -436,4 +437,5 @@ footer{
 .final-dot-pre{
     display: none;
 }
+
 
