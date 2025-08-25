@@ -13,43 +13,64 @@
         grid-template-columns: repeat(3, min-content);
         justify-content: center;
         padding: 0;
-        margin-top: 8px;
+        margin-top: -8px;
         gap: 35px;
-        margin-bottom: 2px;  /* latest added */
+        margin-bottom: 18px;  /* latest added */
     }
     .new-text-container{
-        left: 32px;
+        left: 35px;
+        top: -2px;
     }
     .homes{
         flex-direction: row;
         margin-left: -5px;
-        margin-bottom: 12px;
-        padding-left: 5px;
+        margin-bottom: 11px;
+    }
+    .homes-video{
+        padding-top: 4px;
+        margin-bottom: 1px;
+        margin-left: 6px;
     }
     .experience{
         flex-direction: row;
-        margin-bottom: 12px;
+        margin-bottom: 11px;
+        margin-left: 1px;
+    }
+    .experience-video{
+        margin-top: -3px;
+        padding-top: 4px;
+        margin-left: -1px;
     }
     .services{
         flex-direction: row;
         margin-bottom: 12px;
-        margin-left: -2px;
+        margin-left: 6px;
+    }
+
+
+    .services-video{
+        margin-top: -1px;
     }
     .navigation a{
         font-size: 14px;
         line-height: 18px;
+        letter-spacing: 0;
     }
     .border-bottom{
         margin-left: 16px;
+        color: #222222;
     }
     .border-bottom {
         color: #222222;
+        padding-top: 1px;
     }
     .experience-text{
         margin-left: 8px;
+        padding-top: 1px;
     }
     .services-text{
-        margin-left: 12px;
+        margin-left: 8px;
+        margin-top: 2px;
     }
     .air-bnb-symbol{
         position: absolute;
@@ -120,7 +141,7 @@
         display: none;
         }
     .search-bar {
-        padding: 15px 32px;
+        padding: 14px 31px;
         display: block;
         }
     .search-location {
@@ -141,6 +162,7 @@
         font-family: 'bold';
         border: none;
         margin-left: -2px;
+        margin-top: -1px;
         }
     
     .divider {
@@ -156,6 +178,7 @@
         display: block;
         overflow: clip;
         position: relative;
+        margin-top: -1px;
         }
     .guests-box{
         padding: 15px 130.904px 15px 24px;
@@ -199,8 +222,8 @@
         width: 48px;
         color: white;
         position: absolute;
-        top: 8.7px;
-        right: 9.3px;
+        top: 9px;
+        right: 9px;
         }
     .main-content{
         margin-top: 40px;
@@ -214,7 +237,7 @@
     .left-arrow{
         display: flex;
         background-color: #ffffff;
-        color: #c1c1c1;
+        color: #dddd;
         align-items: center;
         justify-content: center;
         border-radius: 50%;
@@ -364,7 +387,47 @@
     .main-section-text-h2{
         margin: 32px 32px 14px 32px;
     }
+    .last{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 22px;
+    }
+    .future-getaways-text{
+        padding: 49px 32px;
+    }
+    footer{
+        padding: 0px 32px;
+    }
+    .footer-about{
+        padding: 31px 0px;
+    }
+    .footer-right-arrow{
+        right: 20px;
+    }
+    .footer-left-arrow{
+        left: 20px;
+    }
+    .footer-end-744px{
+        margin-bottom: 0;
+        gap: 4px;
+    }
+    .footer-end-language{
+        margin-top: 1px;
+    }
 }
+
+
+
+
+/* 1024 */
+
+
+
+    .future-getaways-text h2{
+        margin-top: -1px;
+    }
 
 
     /* 1127px */
@@ -406,41 +469,58 @@
 /* 1440px */
 
 
-@media(min-width:1440px){
-.apartments-scroll{
-    grid-auto-columns:  calc((100% - 11px * (7 - 1)) / 7);
+    @media(min-width:1440px){
+    .apartments-scroll{
+        grid-auto-columns:  calc((100% - 11px * (7 - 1)) / 7);
+        }
+    .air-bnb-logo-text{
+        left: 48px;
+        top: 32px;
     }
-.air-bnb-logo-text{
-    left: 48px;
-    top: 32px;
-}
-.become-host{
-    right: 152px;
-    top: 20px;
-}
-.globe-symbol{
-    right: 100px;
-    top: 28px;
-}
-.menu-symbol{
-    right: 48px;
-    top: 28px;
-}
-.main-content{
-    margin-top: 33px;
-}
-.search-header{
-    margin-top: 20px;
-}
- .apartments{
+    .become-host{
+        right: 152px;
+        top: 20px;
+    }
+    .globe-symbol{
+        right: 100px;
+        top: 28px;
+    }
+    .menu-symbol{
+        right: 48px;
+        top: 28px;
+    }
+    .main-content{
+        margin-top: 33px;
+    }
+    .search-header{
+        margin-top: 20px;
+    }
+    .apartments{
         padding: 0px 48px 0px 48px;
     }
-      .main-section-text-h2{
+    .main-section-text-h2{
         margin: 32px 48px 14px 48px;
     }
-}
-
-
-
-
-
+    .future-getaways-text{
+        padding: 49px 48px;
+    }
+    footer{
+        padding: 0px 48px;
+    }
+    .footer-about{
+        padding: 47px 0px;
+    }
+    .footer-left-arrow{
+        left: 36px;  
+    }
+    .footer-right-arrow{
+        right: 36px;
+    }
+    .terms-condition{
+        margin-bottom: -3px;
+    }
+    .navigation{
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    }
