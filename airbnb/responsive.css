@@ -405,9 +405,11 @@
     }
     .footer-right-arrow{
         right: 20px;
+        top: 100px;
     }
     .footer-left-arrow{
         left: 20px;
+        top: 100px;
     }
     .footer-end-744px{
         margin-bottom: 0;
@@ -524,3 +526,11 @@
         margin-bottom: 10px;
     }
     }
+
+
+
+
+
+
+
+    
