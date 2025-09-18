@@ -677,15 +677,241 @@ Consistent practice and problem-solving will help you develop stronger logic in 
 
 // 19.fibonacci series up to n terms without function?
 
-let n = 10
-let a = 0, b = 1
-console.log(a);
-console.log(b);
+// let n = 10
+// let a = 0, b = 1
+// console.log(a);
+// console.log(b);
 
-for ( let i = 2; i <= 10; i ++){
-    let next = a + b 
-    console.log(next);
-    a = b
-    b = next 
-}
+// for ( let i = 2; i <= 10; i ++){
+//     let next = a + b 
+//     console.log(next);
+//     a = b
+//     b = next 
+// }
+
+
+
+
+
+
+
+
+
+
+// 19.1 fibonacci series up to n terms without function?
+
+// function fibonacci(num){
+//     let a = 0, b = 1
+//     console.log(a);
+//     console.log(b);
+
+//     for (let i = 5; i <= num; i++){
+//         let sumNext = a + b
+//         console.log(sumNext);
+//         a = b
+//         b = sumNext
+//     }
+// }
+// fibonacci(10)
+
+
+
+
+
+
+
+
+
+// intermediate problems
+
+
+
+
+
+
+
+
+
+
+// 20.check if a number is prime without function?
+
+// let num = 18
+// let isPrime = true
+
+// if (num <= 1){
+// isPrime = false;
+// }
+// else{
+//     for (let i = 2; i < num; i++){
+//         if (num % i === 0) {
+//             isPrime = false;
+//             break;
+//         }
+//     }
+// }
+// console.log(isPrime);
+
+
+
+
+
+
+
+
+
+
+// 20.1 check if a number is prime using function?
+
+// function isPrime(num){
+//     if (num <= 1) 
+//         return false
+//         for (let i = 2; i < num; i++){
+//             if (num % i === 0) 
+//                 return false
+//         }
+//      return true
+// }
+// console.log(isPrime(21));
+
+
+
+
+
+
+
+
+
+
+// 21.find gcd of two number without function? 
+
+// let a = 16, b = 18
+// let gcd = 1 
+// for (let i = 1; i <= Math.min(a , b); i++){
+// if (a % i === 0 && b % i === 0) {
+//     gcd = i
+// }
+// }
+// console.log("the gcd",gcd);
+
+// // GCD (Greatest Common Divisor) is the largest positive integer that divides both numbers without leaving a remainder.
+
+
+
+
+
+
+
+
+
+
+// 21.1 find the gcd of two number using function?
+
+// function gcd(a , b){
+//     let result = 1
+//     for (let i = 1; i <= Math.min(a , b); i++){
+//         if (a % i === 0 && b % i === 0 ) {
+//             result = i
+//         }
+//     }
+//     return result
+// }
+// console.log(gcd(16 , 18));
+
+
+
+
+
+
+
+
+
+
+// 22.print all number up to n without function ?
+
+// let n = 20
+// for ( let i = 2; i <= n; i++){
+//     let prime = true
+
+//     for (let j = 2; j < i; j++){
+//         if (i % j === 0) {
+//             prime = false
+//             break
+//         }
+//     }
+//     if (prime) console.log(i);
+    
+// }
+
+
+
+
+
+
+
+
+
+
+// 22.1 print all number up to n using function?
+
+// function PrimeNum(num){
+// for (let i  = 2; i <= num; i++){
+//     let prime = true
+//     for (let j = 2; j < i; j++){
+//         if (i % j === 0) {
+//             prime = false
+//             break
+//         }
+//     }
+//     if(prime) console.log(i);
+// }
+// }
+// PrimeNum(20)
+
+
+
+
+
+
+
+
+
+
+// Arrow function
+
+// let name = ()=>{
+//     console.log("this is a arrow function");    
+// }
+// name()
+
+
+
+
+
+
+
+
+
+
+
+// object
+
+// const person = {
+//     name : "diddy",
+//     place : "ekm",
+//     phonenumber : "909090909090"
+// }
+
+
+// console.log(person["name"]);
+
+
+
+
+
+
+
+
+
+
+
 
