@@ -252,16 +252,16 @@
 // }
 
 
-function generateSentence(desc, arr){
-    let basestring = `the ${arr.length} ${desc} are`
-        for (let i = 0; i< Array.length; i++){
-            basestring += arr[i] + ","
-        }
-        return basestring
-}
+// function generateSentence(desc, arr){
+//     let basestring = `the ${arr.length} ${desc} are`
+//         for (let i = 0; i< Array.length; i++){
+//             basestring += arr[i] + ","
+//         }
+//         return basestring
+// }
 
-const sentance = generateSentence("highest mountain", [" mount Everest ", "K2"])
-console.log(sentance)
+// const sentance = generateSentence("highest mountain", [" mount Everest ", "K2"])
+// console.log(sentance)
 
 
 
