@@ -913,6 +913,231 @@ Consistent practice and problem-solving will help you develop stronger logic in 
 
 
 
+// 23.callback Function
+
+// let cameraAngleDecision = []
+
+
+// function processThirdumpireReview(groundumpireReq, callback){
+//     if (!groundumpireReq) return 
+
+//     groundumpireReq && callback()
+
+    
+
+//     const [cameraAngle1Result, cameraAngle2Result] = cameraAngleDecision // array destructring
+
+//     cameraAngle1Result && cameraAngle2Result ? displayMessageScreen("Out") : displayMessageScreen("Not Out")
+    
+//     if (cameraAngleDecision.length > 1){
+//     cameraAngle1Result && cameraAngle2Result ? displayMessageScreen("Out") : displayMessageScreen("Not Out")
+//     }
+
+
+// }
+
+
+// function displayMessageScreen(finalScreenDecision){
+//     const screenEl = document.getElementById("screen")
+//     screenEl.innerHTML = finalScreenDecision
+// }
 
 
 
+// function getThirdUmpireResponse(){
+//     let decision = prompt("what is your decision?")
+//     decision = decision.toLowerCase() === "out" ? true : false
+//     cameraAngleDecision.push(decision)
+//     return decision
+// }
+
+
+
+
+// function checkCameraAngle1(){
+//     //umpire is checking some visuals
+//     //umire has a final decision now
+//     getThirdUmpireResponse()
+// }   
+
+// function checkCameraAngle2(){
+//     // umpire is checking some visuals
+//     // umpire has a final decision now
+//     getThirdUmpireResponse()
+// }   
+
+
+
+
+
+// processThirdumpireReview(true , checkCameraAngle1)
+// processThirdumpireReview(true, checkCameraAngle2)
+
+
+
+
+
+
+
+
+
+
+
+// 23.1 call back function !!!
+
+// function add(a,b){
+//     return a + b
+// }
+
+// function divide(a,b){
+//     return a / b
+// }
+
+// function multiply(a,b){
+//     return a * b
+// }
+
+// function calculate( x,y, operation){
+//     return operation( x,y)
+// }
+
+// console.log("sum: ",calculate(2,2, add));
+// console.log("divide: " ,calculate(2,2, divide));
+// console.log("multiply: ",calculate(2,2, multiply));
+
+
+
+
+
+
+
+
+
+
+
+// 24.arrow function and this keyword!!!
+
+// const screenEl = document.getElementById("screen")
+
+// const showMessage = (element) => {
+//     console.log(this);
+// }
+
+
+
+// screenEl.addEventListener("click",showMessage
+
+
+
+
+
+
+
+
+
+
+
+
+// 25. asyncrnous function exicution?
+
+console.log("1. Third umpire review requested.");
+let screenEl = document.getElementById("screen")
+let umpireDecision
+const TIMEOUT = 5000
+
+function getThirdUmpireResult(){
+    console.log("2. third umpire review started.");
+    console.log("3. Third umpire is checking camera.");
+  
+
+
+    return new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve (umpireDecision = "OUT")
+        console.log(`4. Third umpire result is ${umpireDecision}`)
+    }, TIMEOUT);
+    })
+
+}
+
+
+
+function displayThirdUmpireResults(){
+    console.log(`5. Ready to show in ground screen: ${umpireDecision}`);
+    screenEl.innerText = umpireDecision
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+        resolve(screenEl.innerHTML = umpireDecision)
+        // reject("404")
+        }, 2000)
+    })
+}
+
+
+
+function passInfoGroundUmpire(){
+    console.log("6. hey ground umpire, please revert your decision!");
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            // resolve("Success")
+            reject("There is some technical issue found.")
+        },3000)
+    })
+}
+
+
+
+function restartMatch(){
+    console.log("7. match restarted after review.");
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("Restart the match")
+        },4000)
+    })
+}
+
+
+function showtheError(err){
+    console.log(err);
+    
+}
+
+
+
+
+async function initThirdUmpire(){   
+try{
+    await getThirdUmpireResult()
+    await displayThirdUmpireResults()
+    await passInfoGroundUmpire()
+    await restartMatch()
+}
+    catch(err){
+    showtheError(err)
+}
+}
+
+
+initThirdUmpire()
+
+
+
+// getThirdUmpireResult()
+// .then(displayThirdUmpireResults)
+// .then(passInfoGroundUmpire)
+// .then(restartMatch)
+// .catch(showtheError)
+// .finally()
+
+
+
+
+
+
+console.log("-------------------");
+console.log("Other codes are executing");
+console.log("Other codes are executing");
+console.log("Other codes are executing");
+console.log("Other codes are executing");
+console.log("Other codes are executing");
+console.log("-------------------");
