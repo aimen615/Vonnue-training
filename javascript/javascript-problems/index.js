@@ -2083,13 +2083,37 @@ let classOBJ = {
 // BOARD
 // BOARD
 
-function Airport(){
-       
-}
+let queue = [];
 
 let commands = [
     'ADD_NORMAL Alice',
     'ADD_NORMAL Bob',
     'ADD_PRIORITY Carol',
-    'ADD_NORMAL Dave'
+    'ADD_NORMAL Dave',
+    'BOARD',
+    // 'BOARD',
+    // 'BOARD',
 ]
+
+function Airport(command){
+    let parts = command.split(' ');
+    let actions = parts[0];
+    let name = parts[1];
+
+    if (actions === "ADD_NORMAL") {
+        queue.push(name);
+    } else if (actions === "ADD_PRIORITY") {
+        queue.unshift(name);
+    } else if (actions === 'BOARD') {
+        if (queue.length > 0) {
+            let passenger = queue.shift();
+            console.log(passenger);
+        }
+    }
+}
+
+
+commands.forEach(cmd => Airport(cmd));
+
+
+
