@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+.body{
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #424553;
+}
+.site-nav-container{
+    display: flex;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 1px 2px 0 rgba(148, 150, 159, .3);
+    height: 56px;
+}
+.back-icon{
+    margin: 16px;
+    height: 24px;
+    width: 24px;
+}
+.myntra-head-icon{
+    margin-left: 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 24px;
+    height: 24px;
+    margin: 16px 16px 16px 0;
+}
+.myntra-icon{
+    height: 26px;
+    width: 34px;
+}
+.header-title{
+    position: relative;
+    top: 11px;
+    line-height: 1.1;
+    width:calc(100% - 260px);
+    vertical-align: top;
+    z-index: 100;
+}
+.header-title-text{
+    font-family: 'bold';
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: -18px;
+    padding-bottom: 6px;
+}
+.header-title-text-sub{
+    font-family: 'regular';
+    font-size: 12px;
+    font-weight: 400;
+    color: #424553;
+}
+.header-actions-pull-right{
+    display: flex;
+    margin-left: 4px;
+}
+.header-add-icon-btn{
+    top: 1px;
+    position: relative;
+    width: 24px;
+    margin: 17px 16px 16px 0;
+}
+.header-search-icon-btn{
+    position: relative;
+    margin: 16px 16px 16px 0;
+    width: 24px;
+}
+.header-whishlist-icon-btn{
+    position: relative;
+    width: 24px;
+    margin: 16px 16px 16px 0;
+}
+.header-shop-icon-btn{
+    position: relative;
+    margin: 16px 16px 16px 0;
+    width: 24px;
+}
+.top-left-product{
+    float: left;
+    border-top: 1px solid #d4d5d9;
+    width: 50%;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+.list{
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    clear: both;
+    padding-top: 56px;
+}
+.search-product{
+    position: relative;
+
+}
+.img-responsive{
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+.search-product img{
+    display: block;
+    width: 100%;
+    height: 255px;
+    object-fit: cover;
+    object-position: top;
+}
+.content-wrap{
+    position: relative;
+
+}
+.text-wrap{
+    padding: 8px 0;
+}
+.product-title{
+    width: 85%;
+    color: #282c3f;
+    font-family: 'bold';
+    font-size: 13px;
+    font-weight: 700;
+    padding-left: 8px;
+    text-align: left;
+    line-height: 1.57;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.product-description{
+    opacity: .6;
+    font-family: 'regular';
+    padding-left: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 180px;
+    margin: 0;
+    font-size: 11px;
+    font-weight: 400;
+    color: #282c3f;
+    height: 12px;
+    text-align: left;
+    margin-top: -1px;
+}
+.price-container{
+    margin-top: -1px;
+    padding-left: 6px;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 1.42857143;
+}
+.price{
+    font-family: 'bold';
+    font-weight: 700;
+    color: #282c3f;
+    font-size: 13px;
+}
+.price-value{
+    position: relative;
+    left: -4.5px;
+    top: 1px;
+}
+.price-value-orginal{
+    font-size: 13px;
+    font-family: 'regular';
+    position: relative;
+    left: -6px;
+    top: 1px;
+    color: #282c3f;
+    text-decoration: line-through;
+}
+.orginal-price-font{
+    opacity: .4;
+}
+.ruppe-symbol{
+    position: relative;
+    top: 5px;
+}
+.ruppe-symbol-striked{
+    top: 2px;
+    left: -2.5px;
+    position: relative;
+}
+.disc-percent{
+    position: relative;
+    left: -5.5px;
+    top: 1px;
+    color: #ff905a;
+    font-family: 'bold';
+    font-weight: 700;
+    font-size: 11px;
+    white-space: nowrap;
+}
+.couponPLP{
+    position: relative;
+    top: -2.5px;
+    text-align: left;
+    padding-left: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.identifier{
+    color: rgb(3, 166, 133);
+    font-family: 'bold';
+    font-weight: 700;
+    font-size: 12px;
+    white-space: nowrap;
+}
+.other-description{
+    position: relative;
+    font-family: 'regular';
+    color: #686b77;
+    font-size: 12px;
+    left: -1.8px;
+    white-space: nowrap;
+    text-align: left;
+}
+.other-description-two{
+    position: relative;
+    font-family: 'regular';
+    color: #686b77;
+    font-size: 12px;
+    left: -3.5px;
+    white-space: nowrap;
+    text-align: left;
+}
