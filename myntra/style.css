@@ -118,6 +118,7 @@
 }
 .text-wrap{
     padding: 8px 0;
+    position: relative;
 }
 .product-title{
     width: 85%;
@@ -233,3 +234,18 @@
     white-space: nowrap;
     text-align: left;
 }
+.whishlist-icon-container{
+    color: #282c3f;
+    display: inline-block;
+    position: absolute;
+    bottom: 43px;
+    top: 2px;
+    right: 0.5px;
+    padding-top: 4px;
+    padding-left: 15px;
+    height: 38px;
+}
+
+
+
+
