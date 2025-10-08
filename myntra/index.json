@@ -1,0 +1,220 @@
+{
+  "products": [
+    {
+      "ad": true,
+      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/SEPTEMBER/12/7cwU9nQF_955fa94759f740f88e1c5bff419ed03c.jpg",
+      "rating": {
+        "value": 4.2,
+        "count": 80
+      },
+      "brand": "KNYA",
+      "description": "Men Suits",
+      "price": {
+        "current": 2363,
+        "orginal": 2500,
+        "discountPercent": 5
+      },
+      "bestPrice": 2052,
+      "coupon": true,
+      "whishlist": true
+    },
+     {
+      "ad": true,
+      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/SEPTEMBER/12/7cwU9nQF_955fa94759f740f88e1c5bff419ed03c.jpg",
+      "rating": {
+        "value": 4.1,
+        "count": 80
+      },
+      "brand": "KNYA",
+      "description": "Men Suits",
+      "price": {
+        "current": 2363,
+        "orginal": 2500,
+        "discountPercent": 5
+      },
+      "bestPrice": 2052,
+      "coupon": true,
+      "whishlist": true
+    },
+    {
+      "ad": true,
+      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/SEPTEMBER/12/7cwU9nQF_955fa94759f740f88e1c5bff419ed03c.jpg",
+      "rating": {
+        "value": 4.2,
+        "count": 80
+      },
+      "brand": "KNYA",
+      "description": "Men Suits",
+      "price": {
+        "current": 2363,
+        "orginal": 2500,
+        "discountPercent": 5
+      },
+      "bestPrice": 2052,
+      "coupon": true,
+      "whishlist": true
+    },{
+      "ad": true,
+      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/SEPTEMBER/12/7cwU9nQF_955fa94759f740f88e1c5bff419ed03c.jpg",
+      "rating": {
+        "value": 4.2,
+        "count": 80
+      },
+      "brand": "KNYA",
+      "description": "Men Suits",
+      "price": {
+        "current": 2363,
+        "orginal": 2500,
+        "discountPercent": 5
+      },
+      "bestPrice": 2052,
+      "coupon": true,
+      "whishlist": true
+    },
+    {
+      "ad": true,
+      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/SEPTEMBER/12/7cwU9nQF_955fa94759f740f88e1c5bff419ed03c.jpg",
+      "rating": {
+        "value": 4.2,
+        "count": 80
+      },
+      "brand": "KNYA",
+      "description": "Men Suits",
+      "price": {
+        "current": 2363,
+        "orginal": 2500,
+        "discountPercent": 5
+      },
+      "bestPrice": 2052,
+      "coupon": true,
+      "whishlist": true
+    }
+    ,{
+      "ad": true,
+      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/SEPTEMBER/12/7cwU9nQF_955fa94759f740f88e1c5bff419ed03c.jpg",
+      "rating": {
+        "value": 4.2,
+        "count": 80
+      },
+      "brand": "KNYA",
+      "description": "Men Suits",
+      "price": {
+        "current": 2363,
+        "orginal": 2500,
+        "discountPercent": 5
+      },
+      "bestPrice": 2052,
+      "coupon": true,
+      "whishlist": true
+    }
+    ,{
+      "ad": true,
+      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/SEPTEMBER/12/7cwU9nQF_955fa94759f740f88e1c5bff419ed03c.jpg",
+      "rating": {
+        "value": 4.2,
+        "count": 80
+      },
+      "brand": "KNYA",
+      "description": "Men Suits",
+      "price": {
+        "current": 2363,
+        "orginal": 2500,
+        "discountPercent": 5
+      },
+      "bestPrice": 2052,
+      "coupon": true,
+      "whishlist": true
+    }
+    ,{
+      "ad": true,
+      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/SEPTEMBER/12/7cwU9nQF_955fa94759f740f88e1c5bff419ed03c.jpg",
+      "rating": {
+        "value": 4.2,
+        "count": 80
+      },
+      "brand": "KNYA",
+      "description": "Men Suits",
+      "price": {
+        "current": 2363,
+        "orginal": 2500,
+        "discountPercent": 5
+      },
+      "bestPrice": 2052,
+      "coupon": true,
+      "whishlist": true
+    }
+    ,{
+      "ad": true,
+      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/SEPTEMBER/12/7cwU9nQF_955fa94759f740f88e1c5bff419ed03c.jpg",
+      "rating": {
+        "value": 4.2,
+        "count": 80
+      },
+      "brand": "KNYA",
+      "description": "Men Suits",
+      "price": {
+        "current": 2363,
+        "orginal": 2500,
+        "discountPercent": 5
+      },
+      "bestPrice": 2052,
+      "coupon": true,
+      "whishlist": true
+    }
+    ,{
+      "ad": true,
+      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/SEPTEMBER/12/7cwU9nQF_955fa94759f740f88e1c5bff419ed03c.jpg",
+      "rating": {
+        "value": 4.2,
+        "count": 80
+      },
+      "brand": "KNYA",
+      "description": "Men Suits",
+      "price": {
+        "current": 2363,
+        "orginal": 2500,
+        "discountPercent": 5
+      },
+      "bestPrice": 2052,
+      "coupon": true,
+      "whishlist": true
+    }
+    ,{
+      "ad": true,
+      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/SEPTEMBER/12/7cwU9nQF_955fa94759f740f88e1c5bff419ed03c.jpg",
+      "rating": {
+        "value": 4.2,
+        "count": 80
+      },
+      "brand": "KNYA",
+      "description": "Men Suits",
+      "price": {
+        "current": 2363,
+        "orginal": 2500,
+        "discountPercent": 5
+      },
+      "bestPrice": 2052,
+      "coupon": true,
+      "whishlist": true
+    }
+    ,{
+      "ad": true,
+      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/SEPTEMBER/12/7cwU9nQF_955fa94759f740f88e1c5bff419ed03c.jpg",
+      "rating": {
+        "value": 4.2,
+        "count": 80
+      },
+      "brand": "KNYA",
+      "description": "Men Suits",
+      "price": {
+        "current": 2363,
+        "orginal": 2500,
+        "discountPercent": 5
+      },
+      "bestPrice": 2052,
+      "coupon": true,
+      "whishlist": true
+    }
+    
+  ]
+}

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="font.css">
 </head>
 <body>
+    <div class="body-wrapper">
     <header>
 
     <div class="header">
@@ -74,11 +75,64 @@
 </header>
 
 <div class="list-container">
-    <ul class="list">
+    <ul class="list" id="product-list">
+        
+        <!-- <li class="top-left-product">
+            <div class="search-product">
+                <picture class="img-responsive">
+                    <div class="ad-container">
+                        AD
+                    </div>
+                    <img class="top-left-product-image" src="https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/SEPTEMBER/12/7cwU9nQF_955fa94759f740f88e1c5bff419ed03c.jpg" alt="">
+                        <div class="rating-container">
+                        <span class="rating-text">4.2</span>
+                        <span class="rating-star"></span>
+                        <span class="rating-bar">|</span>
+                        <span class="rating-count">80</span>
+                    </div>
+                </picture>
+                <div class="content-wrap">
+                    <div class="text-wrap">
+                        <h3 class="product-title">KNYA</h3>
+                        <h4 class="product-description">Men Suits</h4>
+                    <div class="price-container">
+                        <span class="price">
+                           <svg class="ruppee-symbol" width="17" height="17" viewBox="0 0 24 24" class="rupees" fill="#282C3F"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z" opacity="0"></path><path fill="#282C3F" d="M7 6.215h4.962v2.43H7.505L7.13 9.858h4.764a3.05 3.05 0 01-.827 1.539 2.99 2.99 0 01-2.022.895l-1.361-.003a.304.304 0 00-.214.519l6.717 6.779 1.697-.004-6.107-6.16a4.193 4.193 0 002.14-1.167 4.256 4.256 0 001.198-2.398h2.474l.376-1.215h-2.799v-2.43h3.496V5H7v1.215z"></path></g></svg>
+                            <span class="price-value">2363</span>
+                        </span>
+                        <span class="orginal-price-font">
+                            <svg class="ruppe-symbol-striked" width="10" height="10" viewBox="0 0 9 10" class="strike-rupees"><g fill="#282C3F"><path d="M1.951 5.845l3.91 3.602-.902.376L.7 5.845l.452-.711c.186-.005.392-.02.615-.048a5.2 5.2 0 001.347-.356c.218-.09.42-.201.604-.331.185-.13.345-.281.479-.455.134-.173.231-.371.29-.594H.865v-.841h3.644a1.759 1.759 0 00-.284-.667 1.826 1.826 0 00-.567-.512 2.964 2.964 0 00-.865-.332A5.22 5.22 0 001.63.882H.864V0h6.2v.882H4.18c.173.077.33.174.468.29a2.09 2.09 0 01.612.848c.064.162.11.325.137.489h1.668v.84H5.383a2.38 2.38 0 01-.43 1.03 3.095 3.095 0 01-.8.748 4.076 4.076 0 01-1.043.482 6.15 6.15 0 01-1.159.236z"></path><path d="M0 6.104v-.792h8.14v.792z"></path></g></svg>
+                            <span class="price-value-orginal">2500</span>
+                        </span>
+                        <span class="disc-percent">(5% OFF)</span>
+                    </div>
+                    <div class="couponPLP">
+                        <span class="identifier">Best Price</span>
+                        <span class="identifier">₹2,052</span>
+                        <span class="other-description">with</span>
+                        <span class="other-description-two">coupon</span>
+                    </div>
+                    <div class="whishlist-icon-container">
+                    <svg width="24" height="24" viewBox="0 0 24 24"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill="#3E4152"><path d="M8.1703,4.473425 C6.9537,4.473425 5.8134,4.946625 4.95975,5.805525 C4.10435,6.666175 3.63325,7.815575 3.63325,9.042675 C3.63325,10.269775 4.10435,11.419525 4.95975,12.280175 L12,19.362425 L19.0406,12.279825 C19.89565,11.419525 20.36675,10.270125 20.36675,9.042675 C20.36675,7.815575 19.89565,6.665825 19.0406,5.805875 C19.0406,5.805875 19.0406,5.805525 19.04025,5.805525 C18.1866,4.946625 17.0463,4.473425 15.8297,4.473425 C14.6138,4.473425 13.4742,4.946275 12.62055,5.804475 C12.29225,6.134525 11.70845,6.134875 11.3798,5.804475 C10.5258,4.946275 9.3862,4.473425 8.1703,4.473425 L8.1703,4.473425 Z M12.02835,21.276575 L11.972,21.276575 C11.6304,21.276575 11.2965,21.137625 11.05605,20.895075 L3.71865,13.513925 C2.53495,12.323225 1.88325,10.735275 1.88325,9.042675 C1.88325,7.350075 2.53495,5.762475 3.71865,4.571775 C4.9034,3.379675 6.48435,2.723425 8.1703,2.723425 C9.5759,2.723425 10.90905,3.179825 12,4.022625 C13.0913,3.179825 14.4241,2.723425 15.8297,2.723425 C17.516,2.723425 19.09695,3.379675 20.2817,4.572125 C21.46505,5.762475 22.11675,7.350075 22.11675,9.042675 C22.11675,10.735625 21.46505,12.323225 20.2817,13.513925 L12.94325,20.895775 C12.6993,21.141475 12.3745,21.276575 12.02835,21.276575 L12.02835,21.276575 Z"></path></g></g></svg> 
+                    </div>
+                    </div>
+                    <div class="invicible-space"></div>
+                </div>
+            </div>
+        </li> 
         <li class="top-left-product">
             <div class="search-product">
                 <picture class="img-responsive">
+                    <div class="ad-container">
+                        AD
+                    </div>
                     <img class="top-left-product-image" src="https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/SEPTEMBER/12/7cwU9nQF_955fa94759f740f88e1c5bff419ed03c.jpg" alt="">
+                        <div class="rating-container">
+                        <span class="rating-text">4.1</span>
+                        <span class="rating-star"></span>
+                        <span class="rating-bar">|</span>
+                        <span class="rating-count">80</span>
+                    </div>
                 </picture>
                 <div class="content-wrap">
                     <div class="text-wrap">
@@ -105,13 +159,258 @@
                     <svg width="24" height="24" viewBox="0 0 24 24"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill="#3E4152"><path d="M8.1703,4.473425 C6.9537,4.473425 5.8134,4.946625 4.95975,5.805525 C4.10435,6.666175 3.63325,7.815575 3.63325,9.042675 C3.63325,10.269775 4.10435,11.419525 4.95975,12.280175 L12,19.362425 L19.0406,12.279825 C19.89565,11.419525 20.36675,10.270125 20.36675,9.042675 C20.36675,7.815575 19.89565,6.665825 19.0406,5.805875 C19.0406,5.805875 19.0406,5.805525 19.04025,5.805525 C18.1866,4.946625 17.0463,4.473425 15.8297,4.473425 C14.6138,4.473425 13.4742,4.946275 12.62055,5.804475 C12.29225,6.134525 11.70845,6.134875 11.3798,5.804475 C10.5258,4.946275 9.3862,4.473425 8.1703,4.473425 L8.1703,4.473425 Z M12.02835,21.276575 L11.972,21.276575 C11.6304,21.276575 11.2965,21.137625 11.05605,20.895075 L3.71865,13.513925 C2.53495,12.323225 1.88325,10.735275 1.88325,9.042675 C1.88325,7.350075 2.53495,5.762475 3.71865,4.571775 C4.9034,3.379675 6.48435,2.723425 8.1703,2.723425 C9.5759,2.723425 10.90905,3.179825 12,4.022625 C13.0913,3.179825 14.4241,2.723425 15.8297,2.723425 C17.516,2.723425 19.09695,3.379675 20.2817,4.572125 C21.46505,5.762475 22.11675,7.350075 22.11675,9.042675 C22.11675,10.735625 21.46505,12.323225 20.2817,13.513925 L12.94325,20.895775 C12.6993,21.141475 12.3745,21.276575 12.02835,21.276575 L12.02835,21.276575 Z"></path></g></g></svg> 
                     </div>
                     </div>
+                    <div class="invicible-space"></div>
                 </div>
             </div>
-        </li>
+        </li>  -->
     </ul>
 </div>
+<div class="footer-container">
 
+    <div class="footer-header-clearfix">
+        <p class="clearfix-text">More about Men Suits</p>
+        <svg class="footer-arrow" width="18" height="18" viewBox="0 0 24 24" class="pull-right footer-arrow " style="transform: rotate(180deg);"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z" opacity="0.05"></path><path fill="#282C3F" d="M12.55 15.768a.786.786 0 00.041-.048l6.183-6.36a.815.815 0 000-1.128.761.761 0 00-1.095 0l-5.68 5.844-5.678-5.844a.761.761 0 00-1.095 0 .816.816 0 000 1.127l6.182 6.361A.761.761 0 0012 16a.76.76 0 00.55-.232"></path></g></svg>
+    </div>
+
+    <div class="web-footer-mount">
+        <div class="useful-links">
+            <span class="oshopping">SHOP FOR</span>
+            <span class="oshopping-text">Explore</span>
+            <span class="oshopping-text">Men</span>
+            <span class="oshopping-text">Women</span>
+            <span class="oshopping-text">Kids</span>
+            <span class="oshopping-text-no-line">Home & Living</span>
+        </div>
+        <div class="social-links">
+        <h4>KEEP IN TOUCH</h4>
+        <span class="media-logo-no-padding"><svg width="36" height="36" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z" opacity="0.05"></path><path fill="#535766" d="M21 20.007a.993.993 0 01-.993.993H15.42v-6.97h2.34l.35-2.717h-2.69V9.579c0-.787.218-1.323 1.346-1.323h1.439v-2.43a19.18 19.18 0 00-2.096-.107c-2.074 0-3.494 1.266-3.494 3.59v2.004h-2.346v2.717h2.346V21H3.993A.993.993 0 013 20.007V3.993C3 3.445 3.445 3 3.993 3h16.014c.548 0 .993.445.993.993v16.014"></path></g></svg></span>
+        <span class="media-logo"><svg width="36" height="36" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z" opacity="0.05"></path><path fill="#282C3F" d="M19.744 6.523a6.402 6.402 0 01-1.104.366c.417-.39.732-.878.908-1.422.051-.156-.12-.29-.264-.207a6.428 6.428 0 01-1.686.685.447.447 0 01-.4-.098A3.483 3.483 0 0014.914 5c-.364 0-.731.056-1.092.166a3.31 3.31 0 00-2.252 2.368c-.102.42-.13.84-.082 1.25a.12.12 0 01-.031.095.13.13 0 01-.095.042h-.013a9.089 9.089 0 01-6.216-3.267.182.182 0 00-.295.023 3.345 3.345 0 00-.467 1.705c0 .92.375 1.787 1.028 2.42a3.121 3.121 0 01-.787-.3.18.18 0 00-.268.152 3.394 3.394 0 002.015 3.13h-.074c-.193 0-.389-.017-.58-.054a.179.179 0 00-.207.229 3.441 3.441 0 002.73 2.313 6.44 6.44 0 01-3.564 1.064h-.399a.263.263 0 00-.258.196.267.267 0 00.131.297 9.587 9.587 0 004.757 1.262c1.462 0 2.83-.286 4.065-.848a8.963 8.963 0 002.974-2.193 9.582 9.582 0 001.825-3c.405-1.065.623-2.2.623-3.285v-.051a.57.57 0 01.216-.45c.53-.423.99-.921 1.37-1.48.1-.148-.06-.333-.225-.261"></path></g></svg></span>
+        <span class="media-logo"><svg width="36" height="36" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z" opacity="0.05"></path><g fill="#282C3F"><path d="M18.577 15.577h.004c0 1.654-1.345 3-2.996 3h-7.17a2.993 2.993 0 01-2.992-2.993V8.415a2.993 2.993 0 012.993-2.992h7.169a2.993 2.993 0 012.992 2.992v7.162zM15.585 4h-7.17A4.42 4.42 0 004 8.415v7.17A4.42 4.42 0 008.416 20h7.169A4.42 4.42 0 0020 15.584V8.415A4.42 4.42 0 0015.585 4z"></path><path d="M12 14.703A2.706 2.706 0 019.297 12 2.706 2.706 0 0112 9.297 2.706 2.706 0 0114.703 12 2.706 2.706 0 0112 14.703m0-6.826A4.127 4.127 0 007.877 12 4.127 4.127 0 0012 16.123 4.127 4.127 0 0016.123 12 4.127 4.127 0 0012 7.877m4.296-1.204a1.045 1.045 0 00-1.041 1.042 1.046 1.046 0 001.041 1.041c.274 0 .542-.112.736-.305a1.045 1.045 0 000-1.473 1.046 1.046 0 00-.736-.305"></path></g></g></svg></span>
+        <span class="media-logo"><svg width="36" height="36" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z" opacity="0.05"></path><path fill="#282C3F" d="M9.933 14.709V9.648c1.7.846 3.38 1.687 5.087 2.538l-5.087 2.523m9.79-5.993a1.991 1.991 0 00-1.729-1.504C16.01 7 14.002 6.999 12.003 7c-2-.001-4.008 0-5.992.212a1.99 1.99 0 00-1.729 1.504C4.003 9.875 4 11.14 4 12.333c0 1.194 0 2.459.279 3.618a1.991 1.991 0 001.729 1.504c1.984.212 3.992.213 5.991.212 2 0 4.008 0 5.992-.212a1.991 1.991 0 001.729-1.504c.279-1.16.28-2.424.28-3.618 0-1.193.002-2.458-.276-3.617"></path></g></svg></span>
+    </div>
+    <div class="useful-links">
+        <h4>CUSTOMER POLICIES</h4>
+        <span class="oshopping-text">Contact Us</span>
+        <span class="oshopping-text">FAQ</span>
+        <span class="oshopping-text">T&C</span>
+        <span class="oshopping-text">Terms Of Use</span>
+        <span class="oshopping-text">Track Orders</span>
+        <span class="oshopping-text">Shipping</span>
+        <span class="oshopping-text">Cancellation</span>
+        <span class="oshopping-text">Returns</span>
+        <span class="oshopping-text">Privacy policy</span>
+        <span class="oshopping-text-no-line">Grievance Redressal</span>
+    </div>
+    <div class="useful-links">
+        <h4>USEFUL LINKS</h4>
+        <span class="oshopping-text">Blog</span>
+        <span class="oshopping-text">Careers</span>
+        <span class="oshopping-text">Site Map</span>
+        <span class="oshopping-text">Corporate Information</span>
+        <span class="oshopping-text-no-line">Whitehat</span>
+    </div>
+    <p class="copyright">
+        <span>© 2025 www.myntra.com.</span>
+        <span class="pull-right">All rights reserved.</span>
+    </p>
+    </div>
+<div class="price-container-footer">
+    <h4>Men Suits Price List</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>Men Suits</th>
+                <th>PRICE <br>(RS)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Blackberrys Men Rust Solid Suits</td>
+                <td>Rs. 4678</td>
+            </tr>
+            <tr>
+                <td>Diwas by Manyavar Geometric Printed Mandarin Collar Straight Kurta</td>
+                <td>Rs. 2945</td>
+            </tr>
+            <tr>
+                <td>KNYA Men Grey Suits</td>
+                <td>Rs. 1934</td>
+            </tr>
+            <tr>
+                <td>Blackberrys 3-Piece Slim Men Fit Suits</td>
+                <td>Rs. 3539</td>
+            </tr>
+            <tr>
+                <td>KISAH Men Self Design Slim Fit Jodhpuri Bandhgala & Trousers Set</td>
+                <td>Rs. 9827</td>
+            </tr>
+            <tr>
+                <td>Arrow Men Long Sleeves Suits</td>
+                <td>Rs. 7457</td>
+            </tr>
+            <tr>
+                <td>Allen Solly Men Navy Blue Suits</td>
+                <td>Rs. 4697</td>
+            </tr>
+            <tr>
+                <td>Mr. Bowerbird Checked Tailored Fit Single-Breasted Smart Casual <br>Blazer</td>
+                <td>Rs. 14697</td>
+            </tr>
+            <tr>
+                <td>Peter England Elite Men Blue Suits</td>
+                <td>Rs. 7637</td>
+            </tr>
+            <tr>
+                <td>KNYA Men Active Scrub suits for Doctors</td>
+                <td>Rs. 3597</td>
+            </tr>
+        </tbody>
+     
+    </table>
+      
+</div>
+   
+
+ </div>
+ <div class="sticky-footer">
+    <div class="coloumn">
+        <div class="ripple-container">
+        <button>
+            <svg width="24" height="24" viewBox="0 0 24 24" class="result-icon"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z" opacity="0.05"></path><path fill="#282C3F" d="M7.445 7.48V5.672L5.665 7.48h1.78zm1.09-4.42c.304.12.465.39.465.706v16.437a.784.784 0 01-.783.797.762.762 0 01-.772-.781V8.982H4.003a.832.832 0 01-.765-.204.759.759 0 01.002-1.105L7.652 3.23a.832.832 0 01.882-.17zm8.02 15.269l1.78-1.81h-1.78v1.81zm4.207-3.107a.76.76 0 01-.002 1.106l-4.412 4.442a.832.832 0 01-.882.17c-.305-.12-.466-.39-.466-.706V3.797c0-.432.332-.797.783-.797.45 0 .772.35.772.781v11.237h3.442a.833.833 0 01.765.204z"></path></g></svg>
+            SORT
+        </button>
+        </div>
+    </div>
+    <div class="center-line"></div>
+    <div class="coloumn" onClick="filterToggle()">
+        <div class="ripple-container">
+        <button>
+            <svg class="right-footer-svg" width="24" height="24" viewBox="0 0 24 24" class="result-icon"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z" opacity="0.05"></path><path fill="#282C3F" d="M3.749 7.508a.75.75 0 010-1.5h3.138a2.247 2.247 0 014.243 0h9.121a.75.75 0 010 1.5h-9.126a2.248 2.248 0 01-4.232 0H3.749zm13.373 9h3.129a.75.75 0 010 1.5h-3.135a2.247 2.247 0 01-4.231 0H3.749a.75.75 0 010-1.5h9.13a2.248 2.248 0 014.243 0z"></path></g></svg>
+            FILTER
+        </button>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+<!-- Filter page -->
+
+
+
+<div class="filter-page-wrapper" style="position: fixed;width:100%">
+    <div class="filter-header">
+        <div class="filter-close-block">
+            <span class="filter-close-label">FILTERS</span>
+        </div>
+    </div>
+    <div class="filter-contents">
+        <div class="filters">
+            <ul class="filtersPane">
+                <div class="ripple-container">
+                    <li class="selected-filter selected-filter-dot">
+                        <label>Categories</label>
+                    </li>
+                </div>
+                <div class="ripple-container">
+                    <li class = "selected-filter">
+                        <label>Size</label>
+                    </li>
+                </div>
+                <div class="ripple-container">
+                    <li class ="selected-filter">
+                        <label>Price</label>
+                    </li>
+                </div>
+                <div class="ripple-container">
+                    <li class ="selected-filter">
+                        <label>Brand</label>
+                    </li>
+                </div>
+                <div class="ripple-container">
+                    <li class ="selected-filter">
+                        <label>Color</label>
+                    </li>
+                </div>
+                <div class="ripple-container">
+                    <li class ="selected-filter">
+                        <label>Discount Range</label>
+                    </li>
+                </div>
+                </ul>
+                <ul class="filtersPane">
+                <div class="ripple-container">
+                    <li class ="selected-filter">
+                        <label>Bundles</label>
+                    </li>
+                </div>
+                <div class="ripple-container">
+                    <li class ="selected-filter">
+                        <label>Country of Origin</label>
+                    </li>
+                </div>
+                <div class="ripple-container">
+                    <li class ="selected-filter">
+                        <span class="filter-highlighter"></span>
+                        <label>More Filters</label>
+                    </li>
+                </div>
+                </ul>
+        </div>
+        <div class="filter-section-right">
+            <ul class="filter-options">
+                <div>
+                    <li class="normalValueContainer" id="blazers">
+                        <label class="checkbox">
+                            <input type="checkbox" name="filterValues" value="Blazers">
+                            <div class="checkboxIndicator"></div>
+                            <div class="filterValues">Blazers</div>
+                            <span class="product-count">6808</span>
+                        </label>
+                    </li>
+                    <li class="normalValueContainer" id="Kurta sets">
+                        <label class="checkbox">
+                            <input type="checkbox" name = "filterValues" value = "Kurta Sets">
+                            <div class="checkboxIndicator"></div>
+                            <div class="filterValues">Kurta sets</div>
+                            <span class="product-count">36281</span>
+                        </label>
+                    </li>
+                    <li class="normalValueContainer" id="Kurtas">
+                        <label class="checkbox">
+                            <input type="checkbox" name = "filterValues" value = "Kurtas">
+                            <div class="checkboxIndicator"></div>
+                            <div class="filterValues">Kurtas</div>
+                            <span class="product-count">42518</span>
+                        </label>
+                    </li>
+                    <li class="normalValueContainer normalValueContainer-border" id="Suits">
+                          <label class="checkbox">
+                            <input type="checkbox" name = "filterValues" value = "Suits">
+                            <div class="checkboxIndicator"></div>
+                            <div class="filterValues">Suits</div>
+                            <span class="product-count">2988</span>
+                        </label>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div class="filter-footer">
+        <div class="ripple-container-footer">
+            <button class="filter-btn-footer">
+                Close
+            </button>
+        </div>
+        <div class="footer-btn-divider"></div>
+         <div class="ripple-container-footer-right">
+            <button class="filter-btn-footer-right">
+                Apply
+            </button>
+        </div>
+    </div>
+</div>
+<script src="index.js"></script>
 </body>
 </html>
-
-

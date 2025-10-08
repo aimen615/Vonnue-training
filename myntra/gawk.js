@@ -2,10 +2,7 @@ fetch("./index.json")
   .then(response => response.json())
   .then(data => {
     const listContainer = document.querySelector(".list-container");
-    const ennam=(data.products.length)
-    console.log(ennam)
-    const item = document.querySelector(".header-title-text-sub");
-    item.innerHTML=`${ennam} items`
+
     data.products.forEach(product => {
       const li = document.createElement("li");
       li.classList.add("top-left-product");
@@ -143,9 +140,3 @@ fetch("./index.json")
   })
   .catch(err => console.error("Error fetching JSON:", err));
 
-
-  
-const op = document.querySelector(".body-wrapper")
-const filterToggle=()=>{
-    op.style.display = "none"
-}
