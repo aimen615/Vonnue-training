@@ -216,5 +216,122 @@
       "whishlist": true
     }
     
-  ]
+  ],
+
+
+  "filters": {
+    "Categories": [
+      "Blazers",
+      "Kurta sets",
+      "Kurtas",
+      "Suits"
+    ],
+    "Size": [
+      "3xs",
+      "Xxs",
+      "Xs",
+      "S",
+      "S/m",
+      "M",
+      "M/l",
+      "L",
+      "L/xl",
+      "Xl",
+      "Xl/xxl",
+      "Xxl",
+      "3xl",
+      "4xl",
+      "5xl",
+      "6xl",
+      "7xl",
+      "8xl",
+      "10xl",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
+    ],
+    "Price": {
+      "min": "0",
+      "max": "41,000+",
+      "currency": "₹"
+    },
+    "brand": [
+      "4U Fashion",
+      "5 Stitch",
+      "7 Gen",
+      "8Seconds",
+      "A-Okay",
+      "AA Collection",
+      "Aadi Shuddh",
+      "Aaheli",
+      "Aanys Culture",
+      "Aarika",
+      "Aarsha",
+      "Aarukart",
+      "Aarvyaa",
+      "Aashima Wahal"
+    ],
+    "Color": [
+      "Assorted",
+      "Beige",
+      "Black",
+      "Blue",
+      "Bronze",
+      "Brown",
+      "Burgundy",
+      "Camel Brown",
+      "Champagne",
+      "Charcoal",
+      "Coffee Brown",
+      "Copper",
+      "Coral",
+      "Cream"
+    ],
+    "Discount_Range": [
+      "10% and higher",
+      "20% and higher",
+      "30% and higher",
+      "40% and higher",
+      "50% and higher",
+      "60% and higher",
+      "70% and higher",
+      "80% and higher",
+      "90% and higher"
+    ],
+    "Bundles": [
+      "Bundles",
+      "Single styles"
+    ],
+    "Country_of_Origin": [
+      "All countries",
+      "Bangladesh",
+      "Cambodia",
+      "China",
+      "Hong kong",
+      "In",
+      "India",
+      "Sri lanka",
+      "Switzerland",
+      "Turkey",
+      "Vietnam"
+    ],
+    "More_Filters": [
+
+    ]
+  }
 }
+
+
+
+

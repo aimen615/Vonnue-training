@@ -165,6 +165,12 @@
     color: #282c3f;
     font-size: 13px;
 }
+.price-range{
+    font-family: 'bold';
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
 .price-value{
     position: relative;
     left: -4.5px;
@@ -525,6 +531,9 @@
     font-family: 'bold';
     color: #424553;
 }
+.filter-contents{
+    height: 100%;
+}
 .filters{
     height: 100%;
     width: 33.33%;
@@ -538,11 +547,8 @@
     margin: 0;
     padding: 0;
 }
-.ripple-container{
-    position: relative;
-    overflow: hidden;
-}
 .selected-filter{
+    position: relative;
     background: #f5f5f6;
     font-size: 14px;
     border-bottom: 1px solid #eaeaec;
@@ -561,6 +567,7 @@
     background: #fff;
 }
 .filter-highlighter{
+    position: absolute;
     width: 8px;
     height: 8px;
     background-color: #ff3e6c;
@@ -576,6 +583,7 @@
     width: 66.66%;
 }
 .filter-options{
+    overflow: scroll;
     height: 100vh;
     padding: 0 0 150px;
     margin-left: 12px;
@@ -695,4 +703,61 @@
     font-size: 14px;
     height: 50px;
     line-height: 1.42857143;
+}
+.client-search{
+    padding-left: 8px;
+    background-color: #f4f4f5;
+    border-radius: 2px;
+    border: 1px solid #d4d5d9;
+    margin-left: 4px;
+    margin-top: 10px;
+}
+.searchInput{
+    font-family: 'regular';
+    padding-left: 26px;
+    padding-top: 10px;
+    padding-bottom: 11px;
+    padding-right: 0;
+    color: #3e4152;
+    border-width: 0;
+    background-color: #f4f4f5;
+    font-size: 12px;
+    width: 90%;
+    caret-color: #ff2459;
+    font-weight: 400;
+}
+.client-search svg{
+    position: absolute;
+    top: 23px;
+    left: 16px;
+}
+.filtercolors{
+    background-color: rgb(94,177,96);
+    width: 30px;
+    display: inline-block;
+    height: 20px;
+    margin: -5px 8px -5px 0;
+}
+.price-info{
+    margin: 16px;
+    line-height: 1.42857143;
+}
+.price-title{
+    color: #282c3f;
+    margin-bottom: 4px;
+    font-size: 12px;
+    font-family: 'regular';
+}
+.price-info-count{
+    font-family: 'regular';
+    font-size: 12;
+    color: #7e818c;
+    margin-bottom: 4px;
+    font-size: 12px;
+}
+.container{
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    margin-bottom: 12px;
 }
