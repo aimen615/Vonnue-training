@@ -596,6 +596,7 @@
     font-family: 'regular';
     color: #3e4152;
     line-height: 1.42857143;
+    cursor: pointer;
 }
 .normalValueContainer-border{
     border-bottom: none;
@@ -635,6 +636,16 @@
     border-style: none none solid solid;
     border-width: 1px;
     transform: rotate(-45deg);
+}
+.active-filter .checkboxIndicator{
+  border-color: #ff3e6c;
+  border-style: none none solid solid;
+  border-width: 2px;
+  display: block;
+}
+.active-filter .filterValues {
+  font-weight: 700;
+  color: inherit;
 }
 .filterValues{
     display: inline-block;
@@ -760,4 +771,56 @@
     position: relative;
     display: flex;
     margin-bottom: 12px;
+}
+.popup-container-sort{
+    background-color: #fff;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+.popup-container-sort ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+.sortby{
+    border-bottom: 1px solid #eaeaec;
+    font-weight: 700;
+    font-size: 14px;
+    color: #3e4152;
+    padding-left: 10px;
+    margin: 0 10px;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    font-family: 'bold';
+    line-height: 1.42857143;
+}
+.default{
+    width: 100%;
+    display: inline;
+    border: none;
+    text-transform: none;
+    text-align: left;
+    color: #3e4152;
+    background: #fff;
+    font-size: 14px;
+    font-family: 'regular';
+}
+
+.default svg{
+    width: 24px;
+    height: 24px;
+    float: left;
+    position: relative;
+    top: 5px;
+    right: -23px;
+}
+.sortByValues{
+    padding: 7.5px 0;
+    position: absolute;
+    width: 82%;
+    top: 0;
+    font-size: 14px;
+    left: 65px;
+    font-family: 'regular';
 }

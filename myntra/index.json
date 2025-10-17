@@ -2,35 +2,39 @@
   "products": [
     {
       "ad": true,
-      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/SEPTEMBER/12/7cwU9nQF_955fa94759f740f88e1c5bff419ed03c.jpg",
+      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/SEPTEMBER/11/8wqsLTt1_f851c598595147568d86815988c116e0.jpg",
       "rating": {
         "value": 4.2,
         "count": 80
       },
-      "brand": "KNYA",
-      "description": "Men Suits",
+      "brand": "GARGIAN Master Cut",
+      "description": "Men Polyviscose Suits",
+      "color": "Beige",
+      "size": "Xs",
       "price": {
-        "current": 2363,
-        "orginal": 2500,
-        "discountPercent": 5
+        "current": 2446,
+        "orginal": 4800,
+        "discountPercent": 49
       },
-      "bestPrice": 2052,
+      "bestPrice": 2200,
       "coupon": true,
       "whishlist": true
     },
      {
       "ad": true,
-      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/SEPTEMBER/12/7cwU9nQF_955fa94759f740f88e1c5bff419ed03c.jpg",
+      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/20237088/2022/9/30/2dc3c413-bbb3-46f1-8444-176a305557a11664539101350Suits1.jpg",
       "rating": {
-        "value": 4.1,
+        "value": 4.6,
         "count": 80
       },
-      "brand": "KNYA",
-      "description": "Men Suits",
+      "brand": "Blackberrys",
+      "description": "Men Solid Suits",
+      "color": "Burgundy",
+      "size": "3Xs",
       "price": {
-        "current": 2363,
-        "orginal": 2500,
-        "discountPercent": 5
+        "current": 4678,
+        "orginal": 12995,
+        "discountPercent": 64
       },
       "bestPrice": 2052,
       "coupon": true,
@@ -38,30 +42,34 @@
     },
     {
       "ad": true,
-      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/SEPTEMBER/12/7cwU9nQF_955fa94759f740f88e1c5bff419ed03c.jpg",
+      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2024/NOVEMBER/28/2fjxEAUV_5708be9e25bf4ac8bd78827bb2c7ff9b.jpg",
       "rating": {
-        "value": 4.2,
+        "value": 4,
         "count": 80
       },
-      "brand": "KNYA",
-      "description": "Men Suits",
+      "brand": "Anouk",
+      "description": "Men Geometric Embroidered Kurta",
+      "color": "Coral",
+      "size": "XXs",
       "price": {
-        "current": 2363,
-        "orginal": 2500,
-        "discountPercent": 5
+        "current": 4000,
+        "orginal": 8000,
+        "discountPercent": 50
       },
-      "bestPrice": 2052,
+      "bestPrice": 3500,
       "coupon": true,
       "whishlist": true
     },{
       "ad": true,
-      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/SEPTEMBER/12/7cwU9nQF_955fa94759f740f88e1c5bff419ed03c.jpg",
+      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/24551024/2023/8/18/64285b4c-b7c5-4754-8d7d-e639f88e15681692365163605CheckCasualBlazerInBlueScout1.jpg",
       "rating": {
-        "value": 4.2,
+        "value": 3.4,
         "count": 80
       },
-      "brand": "KNYA",
-      "description": "Men Suits",
+      "brand": "Blackberrys",
+      "description": "Checked Slim Fit Blazers",
+      "color": "Assorted",
+      "size": "S",
       "price": {
         "current": 2363,
         "orginal": 2500,
@@ -73,145 +81,161 @@
     },
     {
       "ad": true,
-      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/SEPTEMBER/12/7cwU9nQF_955fa94759f740f88e1c5bff419ed03c.jpg",
+      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/13937200/2025/3/20/4573fda3-fb24-43e1-a905-a634a35ceb531742459053120-SOJANYA-Men-Blue--Off-White-Woven-Design-Kurta-with-Churidar-1.jpg",
       "rating": {
         "value": 4.2,
-        "count": 80
+        "count": 427
       },
-      "brand": "KNYA",
-      "description": "Men Suits",
+      "brand": "SOJANYA",
+      "description": "Men Kurta with Churidar",
+      "color": "Charcoal",
+      "size": "M",
       "price": {
-        "current": 2363,
-        "orginal": 2500,
-        "discountPercent": 5
+        "current": 979,
+        "orginal": 4249,
+        "discountPercent": 77
       },
-      "bestPrice": 2052,
+      "bestPrice": 750,
       "coupon": true,
       "whishlist": true
     }
     ,{
       "ad": true,
-      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/SEPTEMBER/12/7cwU9nQF_955fa94759f740f88e1c5bff419ed03c.jpg",
+      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/MARCH/19/jDEYYOQm_30845372b26f4f5c8b57a89ab22be998.jpg",
       "rating": {
-        "value": 4.2,
-        "count": 80
+        "value": 4.5,
+        "count": 55
       },
-      "brand": "KNYA",
-      "description": "Men Suits",
+      "brand": "VASTRAMAY",
+      "description": "Printed Kurta Set",
+      "color": "Green",
+      "size": "L",
       "price": {
-        "current": 2363,
-        "orginal": 2500,
-        "discountPercent": 5
+        "current": 1202,
+        "orginal": 3249,
+        "discountPercent": 63
       },
-      "bestPrice": 2052,
+      "bestPrice": 999,
       "coupon": true,
       "whishlist": true
     }
     ,{
       "ad": true,
-      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/SEPTEMBER/12/7cwU9nQF_955fa94759f740f88e1c5bff419ed03c.jpg",
+      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/MARCH/19/WPqlrvRS_57be44d65498423e978c5141df65483e.jpg",
       "rating": {
         "value": 4.2,
         "count": 80
       },
-      "brand": "KNYA",
-      "description": "Men Suits",
+      "brand": "VASTRAMAY",
+      "description": "Bandhani Printed Kurta Set",
+      "color": "Charcoal",
+      "size": "45",
       "price": {
-        "current": 2363,
-        "orginal": 2500,
-        "discountPercent": 5
+        "current": 1299,
+        "orginal": 3249,
+        "discountPercent": 60
       },
-      "bestPrice": 2052,
+      "bestPrice": 1100,
       "coupon": true,
       "whishlist": true
     }
     ,{
       "ad": true,
-      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/SEPTEMBER/12/7cwU9nQF_955fa94759f740f88e1c5bff419ed03c.jpg",
+      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/32102660/2025/5/9/5b6b896e-a60e-41d4-a8e5-8c23762a57921746774037868-INVICTUS-Men-Blazers-1541746774037299-1.jpg",
       "rating": {
-        "value": 4.2,
+        "value": 4.4,
         "count": 80
       },
-      "brand": "KNYA",
-      "description": "Men Suits",
+      "brand": "INVICTUS",
+      "description": "Slim Fit Bandhgala Blazers",
+      "color": "Black",
+      "size": "3xl",
       "price": {
-        "current": 2363,
-        "orginal": 2500,
-        "discountPercent": 5
+        "current": 2549,
+        "orginal": 7499,
+        "discountPercent": 66
       },
-      "bestPrice": 2052,
+      "bestPrice": 2200,
       "coupon": true,
       "whishlist": true
     }
     ,{
       "ad": true,
-      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/SEPTEMBER/12/7cwU9nQF_955fa94759f740f88e1c5bff419ed03c.jpg",
+      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/OCTOBER/8/6k0zvD00_f2b0883df25c4a98b5dc099171d524a6.jpg",
       "rating": {
-        "value": 4.2,
+        "value": 4.5,
         "count": 80
       },
-      "brand": "KNYA",
-      "description": "Men Suits",
+      "brand": "VASTRADO",
+      "description": "Men Striped Kurta",
+      "color": "Brown",
+      "size": "40",
       "price": {
-        "current": 2363,
-        "orginal": 2500,
-        "discountPercent": 5
+        "current": 1899,
+        "orginal": 854,
+        "discountPercent": 55
       },
-      "bestPrice": 2052,
+      "bestPrice": 1600,
       "coupon": true,
       "whishlist": true
     }
     ,{
       "ad": true,
-      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/SEPTEMBER/12/7cwU9nQF_955fa94759f740f88e1c5bff419ed03c.jpg",
+      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/31677285/2024/12/23/2f9fe402-8219-4420-a004-22f72ac2f7da1734952476892-MANQ-Men-Suits-8271734952476206-1.jpg",
       "rating": {
         "value": 4.2,
-        "count": 80
+        "count": 5
       },
-      "brand": "KNYA",
-      "description": "Men Suits",
+      "brand": "MANQ",
+      "description": "Slim Fit Tuxedo Suits",
+      "color": "Black",
+      "size": "S/m",
       "price": {
-        "current": 2363,
-        "orginal": 2500,
-        "discountPercent": 5
+        "current": 4499,
+        "orginal": 9999,
+        "discountPercent": 55
       },
-      "bestPrice": 2052,
+      "bestPrice": 4200,
       "coupon": true,
       "whishlist": true
     }
     ,{
       "ad": true,
-      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/SEPTEMBER/12/7cwU9nQF_955fa94759f740f88e1c5bff419ed03c.jpg",
+      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/JANUARY/18/Wyp7DIPN_db00fe7e526c4bee929ef9ff37d26507.jpg",
       "rating": {
-        "value": 4.2,
-        "count": 80
+        "value": 4.3,
+        "count": 6
       },
-      "brand": "KNYA",
-      "description": "Men Suits",
+      "brand": "FAVOROSKI",
+      "description": "Embroidered Party Blazer",
+      "color": "Coffee Brown",
+      "size": "4xl",
       "price": {
-        "current": 2363,
-        "orginal": 2500,
-        "discountPercent": 5
+        "current": 2775,
+        "orginal": 5999,
+        "discountPercent": 53
       },
-      "bestPrice": 2052,
+      "bestPrice": 2500,
       "coupon": true,
       "whishlist": true
     }
     ,{
       "ad": true,
-      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/SEPTEMBER/12/7cwU9nQF_955fa94759f740f88e1c5bff419ed03c.jpg",
+      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/JULY/1/mvOslLyQ_8e5ebcd9328841e8b29c2e871bd6db95.jpg",
       "rating": {
-        "value": 4.2,
-        "count": 80
+        "value": 3.8,
+        "count": 53
       },
-      "brand": "KNYA",
-      "description": "Men Suits",
+      "brand": "Jompers",
+      "description": "Men Embroidered Kurta Set",
+      "color": "Cream",
+      "size": "5xl",
       "price": {
-        "current": 2363,
-        "orginal": 2500,
-        "discountPercent": 5
+        "current": 1358,
+        "orginal": 10449,
+        "discountPercent": 87
       },
-      "bestPrice": 2052,
+      "bestPrice": 1200,
       "coupon": true,
       "whishlist": true
     }
@@ -263,7 +287,7 @@
     ],
     "Price": {
       "min": "0",
-      "max": "41,000+",
+      "max": "41,000 +",
       "currency": "₹"
     },
     "brand": [
@@ -296,7 +320,8 @@
       "Coffee Brown",
       "Copper",
       "Coral",
-      "Cream"
+      "Cream",
+      "Green"
     ],
     "Discount_Range": [
       "10% and higher",
@@ -331,7 +356,3 @@
     ]
   }
 }
-
-
-
-
