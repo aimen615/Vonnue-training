@@ -5,7 +5,8 @@ const selectedFilters = {}; // { "Size": Set(), "Categories": Set(), ... }
 
 function renderProducts(products) {
   const listContainer = document.querySelector(".list-container");
-  const ul = listContainer.querySelector(".list") || document.querySelector(".list");
+  const ul =
+    listContainer.querySelector(".list") || document.querySelector(".list");
   if (!ul) return console.error("product list UL not found");
   ul.innerHTML = ""; // Clear existing items
 
@@ -125,6 +126,26 @@ function renderProducts(products) {
 
     contentWrap.appendChild(textWrap);
 
+    // whishlist icon
+    const whishlist = document.createElement("div");
+    whishlist.classList.add("whishlist-icon-container");
+
+    whishlist.innerHTML = `
+    <svg width="24" height="24" viewBox="0 0 24 24">
+  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g class="wishlist-heart">  <!-- Added class here -->
+      <path d="M8.1703,4.473425 C6.9537,4.473425 5.8134,4.946625 4.95975,5.805525 C4.10435,6.666175 3.63325,7.815575 3.63325,9.042675 C3.63325,10.269775 4.10435,11.419525 4.95975,12.280175 L12,19.362425 L19.0406,12.279825 C19.89565,11.419525 20.36675,10.270125 20.36675,9.042675 C20.36675,7.815575 19.89565,6.665825 19.0406,5.805875 C19.0406,5.805875 19.0406,5.805525 19.04025,5.805525 C18.1866,4.946625 17.0463,4.473425 15.8297,4.473425 C14.6138,4.473425 13.4742,4.946275 12.62055,5.804475 C12.29225,6.134525 11.70845,6.134875 11.3798,5.804475 C10.5258,4.946275 9.3862,4.473425 8.1703,4.473425 L8.1703,4.473425 Z M12.02835,21.276575 L11.972,21.276575 C11.6304,21.276575 11.2965,21.137625 11.05605,20.895075 L3.71865,13.513925 C2.53495,12.323225 1.88325,10.735275 1.88325,9.042675 C1.88325,7.350075 2.53495,5.762475 3.71865,4.571775 C4.9034,3.379675 6.48435,2.723425 8.1703,2.723425 C9.5759,2.723425 10.90905,3.179825 12,4.022625 C13.0913,3.179825 14.4241,2.723425 15.8297,2.723425 C17.516,2.723425 19.09695,3.379675 20.2817,4.572125 C21.46505,5.762475 22.11675,7.350075 22.11675,9.042675 C22.11675,10.735625 21.46505,12.323225 20.2817,13.513925 L12.94325,20.895775 C12.6993,21.141475 12.3745,21.276575 12.02835,21.276575 L12.02835,21.276575 Z"></path>
+    </g>
+  </g>
+</svg> 
+    `;
+    textWrap.appendChild(whishlist);
+
+    whishlist.addEventListener("click", function () {
+      this.classList.toggle("whishlist-active");
+    });
+
+    // invicible space
     const invisibleSpace = document.createElement("div");
     invisibleSpace.classList.add("invicible-space");
     contentWrap.appendChild(invisibleSpace);
@@ -156,14 +177,18 @@ fetch("./index.json")
 /* ----------------- helper: safe text compare ----------------- */
 function includesCaseInsensitive(source, term) {
   if (!source || !term) return false;
-  return source.toString().toLowerCase().includes(term.toString().toLowerCase());
+  return source
+    .toString()
+    .toLowerCase()
+    .includes(term.toString().toLowerCase());
 }
 
 /* ----------------- FILTER UI + logic ----------------- */
 function setupFilters(filters) {
   const leftPanel = document.querySelector(".filters");
   const rightPanel = document.querySelector(".filter-section-right");
-  if (!leftPanel || !rightPanel) return console.error("Filter panels not found");
+  if (!leftPanel || !rightPanel)
+    return console.error("Filter panels not found");
 
   // Clear right panel (we'll populate when left items clicked)
   rightPanel.innerHTML = `<ul class="filter-options"></ul>`;
@@ -227,7 +252,12 @@ function populateRightPanel(key, values) {
   // Add special search input for Size (and optionally brand/color)
   const keyNormalized = key.toLowerCase();
 
-  if (keyNormalized === "size" || keyNormalized === "brand" || keyNormalized === "color" || keyNormalized === "country_of_origin") {
+  if (
+    keyNormalized === "size" ||
+    keyNormalized === "brand" ||
+    keyNormalized === "color" ||
+    keyNormalized === "country_of_origin"
+  ) {
     const searchDiv = document.createElement("div");
     searchDiv.classList.add("ripple-container");
     const placeholder =
@@ -273,7 +303,11 @@ function renderFilterOptions(key, values, searchTerm) {
   // keep first child if it's searchDiv
   const firstChild = rightList.firstElementChild;
   rightList.innerHTML = "";
-  if (firstChild && firstChild.querySelector && firstChild.querySelector(".searchInput")) {
+  if (
+    firstChild &&
+    firstChild.querySelector &&
+    firstChild.querySelector(".searchInput")
+  ) {
     rightList.appendChild(firstChild); // keep the searchDiv
   }
 
@@ -298,7 +332,8 @@ function renderFilterOptions(key, values, searchTerm) {
     };
 
     values.forEach((val) => {
-      if (searchTerm && !val.toLowerCase().includes(searchTerm.toLowerCase())) return;
+      if (searchTerm && !val.toLowerCase().includes(searchTerm.toLowerCase()))
+        return;
 
       const option = document.createElement("li");
       option.classList.add("normalValueContainer");
@@ -354,50 +389,50 @@ function renderFilterOptions(key, values, searchTerm) {
 
 /* ----------------- Price Slider Functionality ----------------- */
 function initPriceSlider(priceData) {
-  const slider = document.querySelector('.slider');
-  const thumbLeft = document.querySelector('.thumb-left');
-  const thumbRight = document.querySelector('.thumb-right');
-  const train = document.querySelector('.train');
-  const priceRange = document.querySelector('.price-range');
-  const priceInfoCount = document.querySelector('.price-info-count');
-  
+  const slider = document.querySelector(".slider");
+  const thumbLeft = document.querySelector(".thumb-left");
+  const thumbRight = document.querySelector(".thumb-right");
+  const train = document.querySelector(".train");
+  const priceRange = document.querySelector(".price-range");
+  const priceInfoCount = document.querySelector(".price-info-count");
+
   if (!slider || !thumbLeft || !thumbRight) return;
 
   const sliderWidth = slider.offsetWidth;
   const minPrice = 0;
   const maxPrice = 41000; // Maximum price from your JSON
-  
+
   let leftValue = minPrice;
   let rightValue = maxPrice;
 
   function updateSlider() {
     const leftPercent = (leftValue / maxPrice) * 100;
     const rightPercent = (rightValue / maxPrice) * 100;
-    
+
     thumbLeft.style.left = `${leftPercent}%`;
     thumbRight.style.left = `${rightPercent}%`;
     train.style.left = `${leftPercent}%`;
     train.style.right = `${100 - rightPercent}%`;
-    
+
     // Update price display
     priceRange.textContent = `₹${leftValue.toLocaleString()} - ₹${rightValue.toLocaleString()}`;
-    
+
     // Update product count (you can make this dynamic based on actual filtered count)
-    const productCount = allProducts.filter(p => 
-      p.price.current >= leftValue && p.price.current <= rightValue
+    const productCount = allProducts.filter(
+      (p) => p.price.current >= leftValue && p.price.current <= rightValue
     ).length;
     priceInfoCount.textContent = `${productCount} products found`;
-    
+
     // Update selectedFilters for price
     selectedFilters.Price = {
       min: leftValue,
       max: rightValue,
-      currency: "₹"
+      currency: "₹",
     };
   }
 
   function makeDraggable(thumb, isLeft) {
-    thumb.addEventListener('mousedown', (e) => {
+    thumb.addEventListener("mousedown", (e) => {
       e.preventDefault();
       const startX = e.clientX;
       const startLeft = parseInt(thumb.style.left) || 0;
@@ -406,7 +441,7 @@ function initPriceSlider(priceData) {
         const deltaX = e.clientX - startX;
         let newLeft = startLeft + (deltaX / sliderWidth) * 100;
         newLeft = Math.max(0, Math.min(newLeft, 100));
-        
+
         if (isLeft) {
           newLeft = Math.min(newLeft, (rightValue / maxPrice) * 100 - 2);
           leftValue = Math.round((newLeft / 100) * maxPrice);
@@ -414,23 +449,23 @@ function initPriceSlider(priceData) {
           newLeft = Math.max(newLeft, (leftValue / maxPrice) * 100 + 2);
           rightValue = Math.round((newLeft / 100) * maxPrice);
         }
-        
+
         updateSlider();
       }
 
       function onMouseUp() {
-        document.removeEventListener('mousemove', onMouseMove);
-        document.removeEventListener('mouseup', onMouseUp);
+        document.removeEventListener("mousemove", onMouseMove);
+        document.removeEventListener("mouseup", onMouseUp);
       }
 
-      document.addEventListener('mousemove', onMouseMove);
-      document.addEventListener('mouseup', onMouseUp);
+      document.addEventListener("mousemove", onMouseMove);
+      document.addEventListener("mouseup", onMouseUp);
     });
   }
 
   makeDraggable(thumbLeft, true);
   makeDraggable(thumbRight, false);
-  
+
   // Initialize slider positions
   updateSlider();
 }
@@ -438,7 +473,11 @@ function initPriceSlider(priceData) {
 /* ----------------- handle checkbox selection via delegation ----------------- */
 document.addEventListener("change", function (e) {
   // handle checkboxes rendered in right panel
-  if (e.target.matches('.filter-options input[type="checkbox"], .filter-options input[type="checkbox"]')) {
+  if (
+    e.target.matches(
+      '.filter-options input[type="checkbox"], .filter-options input[type="checkbox"]'
+    )
+  ) {
     const checkbox = e.target;
     const key = checkbox.dataset.filterKey;
     const val = checkbox.value;
@@ -492,15 +531,18 @@ if (applyBtn) {
       const valuesSet = selectedFilters[filterKey]; // Set
       if (!valuesSet || valuesSet.size === 0) return;
 
-      const valuesArray = Array.from(valuesSet).map((v) => v.toString().toLowerCase());
+      const valuesArray = Array.from(valuesSet).map((v) =>
+        v.toString().toLowerCase()
+      );
 
       const kLower = filterKey.toLowerCase();
-      
+
       // Add price filtering condition
       if (kLower === "price") {
-        filtered = filtered.filter((p) => 
-          p.price.current >= selectedFilters.Price.min && 
-          p.price.current <= selectedFilters.Price.max
+        filtered = filtered.filter(
+          (p) =>
+            p.price.current >= selectedFilters.Price.min &&
+            p.price.current <= selectedFilters.Price.max
         );
       }
       // Add discount range filtering condition
@@ -508,7 +550,7 @@ if (applyBtn) {
         filtered = filtered.filter((p) =>
           valuesArray.some((val) => {
             const discountPercent = p.price.discountPercent;
-            
+
             if (val === "10% and higher") return discountPercent >= 10;
             if (val === "20% and higher") return discountPercent >= 20;
             if (val === "30% and higher") return discountPercent >= 30;
@@ -518,7 +560,7 @@ if (applyBtn) {
             if (val === "70% and higher") return discountPercent >= 70;
             if (val === "80% and higher") return discountPercent >= 80;
             if (val === "90% and higher") return discountPercent >= 90;
-            
+
             return false;
           })
         );
@@ -550,15 +592,22 @@ if (applyBtn) {
         filtered = filtered.filter((p) =>
           valuesArray.some((val) => {
             // Direct match in description or brand
-            if (includesCaseInsensitive(p.description, val) || includesCaseInsensitive(p.brand, val)) {
+            if (
+              includesCaseInsensitive(p.description, val) ||
+              includesCaseInsensitive(p.brand, val)
+            ) {
               return true;
             }
-            
+
             // Additional keyword matching for categories
             const descLower = p.description.toLowerCase();
             const valLower = val.toLowerCase();
-            
-            if (valLower === "kurtas" && (descLower.includes("kurta") && !descLower.includes("set"))) {
+
+            if (
+              valLower === "kurtas" &&
+              descLower.includes("kurta") &&
+              !descLower.includes("set")
+            ) {
               return true;
             }
             if (valLower === "kurta sets" && descLower.includes("kurta set")) {
@@ -570,7 +619,7 @@ if (applyBtn) {
             if (valLower === "suits" && descLower.includes("suit")) {
               return true;
             }
-            
+
             return false;
           })
         );
@@ -583,7 +632,11 @@ if (applyBtn) {
       } else {
         // generic fallback: check both brand and description
         filtered = filtered.filter((p) =>
-          valuesArray.some((val) => includesCaseInsensitive(p.brand, val) || includesCaseInsensitive(p.description, val))
+          valuesArray.some(
+            (val) =>
+              includesCaseInsensitive(p.brand, val) ||
+              includesCaseInsensitive(p.description, val)
+          )
         );
       }
     });
@@ -644,4 +697,144 @@ document.addEventListener("DOMContentLoaded", () => {
       ClosingFilter();
     });
   }
+});
+
+const sortBtn = document.querySelector(
+  ".sticky-footer .coloumn:first-child button"
+);
+const sortPopup = document.querySelector(".popup-container-sort");
+const overlay = document.querySelector("#sortOverlay");
+
+// Open Sort Popup
+sortBtn.addEventListener("click", () => {
+  sortPopup.style.display = "block";
+  overlay.style.display = "block";
+});
+
+// Close popup when clicking outside (overlay)
+overlay.addEventListener("click", () => {
+  sortPopup.style.display = "none";
+  overlay.style.display = "none";
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const sortButtons = document.querySelectorAll(".sortByValues");
+  const sortBorder = document.querySelectorAll(".selected");
+  sortButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      sortButtons.forEach((b) => b.classList.remove("active"));
+      button.classList.add("active");
+    });
+  });
+  sortBorder.forEach((button) => {
+    button.addEventListener("click", () => {
+      sortBorder.forEach((b) => b.classList.remove("active"));
+      button.classList.add("active");
+    });
+  });
+});
+
+function applyPriceLowToHighSort() {
+  if (!allProducts.length) return;
+
+  let sortedProducts = [...allProducts];
+  sortedProducts.sort((a, b) => a.price.current - b.price.current);
+  renderProducts(sortedProducts);
+}
+
+// Add click event to Price Low to High option
+document.addEventListener("DOMContentLoaded", function () {
+  const sortButtons = document.querySelectorAll(".sortByValues");
+  const sortPopup = document.querySelector(".popup-container-sort");
+  const overlay = document.querySelector("#sortOverlay");
+
+  sortButtons.forEach((button) => {
+    if (button.textContent.includes("Price: Low to High")) {
+      button.addEventListener("click", function () {
+        applyPriceLowToHighSort();
+        if (sortPopup) sortPopup.style.display = "none";
+        if (overlay) overlay.style.display = "none";
+      });
+    }
+  });
+});
+
+function applyPriceHighToLowSort() {
+  if (!allProducts.length) return;
+
+  let sortedProducts = [...allProducts];
+  sortedProducts.sort((a, b) => b.price.current - a.price.current);
+  renderProducts(sortedProducts);
+}
+
+// Add click event to Price Low to High option
+
+document.addEventListener("DOMContentLoaded", function () {
+  const sortButtons = document.querySelectorAll(".sortByValues");
+  const sortPopup = document.querySelector(".popup-container-sort");
+  const overlay = document.querySelector("#sortOverlay");
+
+  sortButtons.forEach((button) => {
+    if (button.textContent.includes("Price: High to Low")) {
+      button.addEventListener("click", function () {
+        applyPriceHighToLowSort();
+        if (sortPopup) sortPopup.style.display = "none";
+        if (overlay) overlay.style.display = "none";
+      });
+    }
+  });
+});
+
+function applyDiscountSort() {
+  if (!allProducts.length) return;
+
+  let sortedProducts = [...allProducts];
+  sortedProducts.sort(
+    (a, b) => b.price.discountPercent - a.price.discountPercent
+  );
+  renderProducts(sortedProducts);
+}
+
+// Add click event to discount option
+
+document.addEventListener("DOMContentLoaded", function () {
+  const sortButtons = document.querySelectorAll(".sortByValues");
+
+  sortButtons.forEach((button) => {
+    if (button.textContent.includes("Discount")) {
+      button.addEventListener("click", function () {
+        applyDiscountSort();
+        const sortPopup = document.querySelector(".popup-container-sort");
+        const overlay = document.querySelector("#sortOverlay");
+        if (sortPopup) sortPopup.style.display = "none";
+        if (overlay) overlay.style.display = "none";
+      });
+    }
+  });
+});
+
+// Function to apply Customer Rating sorting
+function applyCustomerRatingSort() {
+  if (!allProducts.length) return;
+
+  let sortedProducts = [...allProducts];
+  sortedProducts.sort((a, b) => b.rating.value - a.rating.value);
+  renderProducts(sortedProducts);
+}
+
+// Add click event to Customer Rating option
+document.addEventListener("DOMContentLoaded", function () {
+  const sortButtons = document.querySelectorAll(".sortByValues");
+
+  sortButtons.forEach((button) => {
+    if (button.textContent.includes("Customer Rating")) {
+      button.addEventListener("click", function () {
+        applyCustomerRatingSort();
+        const sortPopup = document.querySelector(".popup-container-sort");
+        const overlay = document.querySelector("#sortOverlay");
+        if (sortPopup) sortPopup.style.display = "none";
+        if (overlay) overlay.style.display = "none";
+      });
+    }
+  });
 });
