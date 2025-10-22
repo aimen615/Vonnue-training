@@ -1,14 +1,12 @@
-// index.js - REPLACE your current JS with this file
-
-let allProducts = []; // global products store
-const selectedFilters = {}; // { "Size": Set(), "Categories": Set(), ... }
+let allProducts = [];
+const selectedFilters = {};
 
 function renderProducts(products) {
   const listContainer = document.querySelector(".list-container");
   const ul =
     listContainer.querySelector(".list") || document.querySelector(".list");
   if (!ul) return console.error("product list UL not found");
-  ul.innerHTML = ""; // Clear existing items
+  ul.innerHTML = "";
 
   products.forEach((product) => {
     const li = document.createElement("li");
@@ -190,13 +188,8 @@ function setupFilters(filters) {
   if (!leftPanel || !rightPanel)
     return console.error("Filter panels not found");
 
-  // Clear right panel (we'll populate when left items clicked)
   rightPanel.innerHTML = `<ul class="filter-options"></ul>`;
 
-  // Build left panel items from the filters object keys
-  // But avoid duplicating if user already has manual items in HTML:
-  // We'll remove current generated items first if present (only keep existing static markup)
-  // Simpler approach: replace leftPanel content entirely so JS is authoritative.
   leftPanel.innerHTML = ""; // ensures no duplicates
 
   Object.keys(filters).forEach((key) => {
@@ -313,7 +306,6 @@ function renderFilterOptions(key, values, searchTerm) {
 
   // if values is an array, create checkbox items
   if (Array.isArray(values)) {
-    // optional color map for color chips
     const colorMap = {
       Brown: "#964B00",
       Burgundy: "#800020",
@@ -838,3 +830,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+
+
